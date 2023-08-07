@@ -4,12 +4,14 @@
 from langchain import HuggingFaceHub, LLMChain
 from langchain import PromptTemplate, HuggingFaceHub, LLMChain
 
-template = """Question: {question}
+template = "Question: {question} Answer with as few words as possible."
+prompt_template = PromptTemplate(template=template, input_variables=["question"])
 
-Answer: Let's think step by step."""
-prompt = PromptTemplate(template=template, input_variables=["question"])
-llm_chain = LLMChain(prompt=prompt, llm=HuggingFaceHub(repo_id="google/flan-t5-base", model_kwargs={"temperature":0, "max_length":64}))
+# this uses HF servers for inference
+# TODO: replace with local model
+llm_model = HuggingFaceHub(repo_id="google/flan-t5-base", model_kwargs={"temperature":0, "max_length":64})
 
-question = "What NFL team won the Super Bowl in the year Justin Beiber was born?"
+llm_chain = LLMChain(prompt=prompt_template, llm=llm_model)
 
+question = "What color goose berry is?"
 print(llm_chain.run(question))
