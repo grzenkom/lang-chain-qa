@@ -9,6 +9,7 @@ packages = [{include = "lang_chain_qa", from = "src"}]
 [tool.poetry.dependencies]
 python = "^3.10"
 langchain = "0.0.251"
+huggingface-hub = "0.16.4"
 
 
 [build-system]
