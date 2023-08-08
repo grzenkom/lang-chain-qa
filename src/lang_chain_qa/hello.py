@@ -14,10 +14,10 @@ assert len(os.environ["HUGGINGFACEHUB_API_TOKEN"]) > 0
 device = -1
 
 # the model will be downloaded on first use, if not cached in ~/.cache/huggingface/hub/
-model_id = "lmsys/fastchat-t5-3b-v1.0"
+model_id = "databricks/dolly-v2-3b"
 model = HuggingFacePipeline.from_model_id(
     model_id=model_id,
-    task="text2text-generation",
+    task="text-generation",
     model_kwargs={"temperature": 0, "max_length": 1000},
     device=device
 )
