@@ -8,8 +8,8 @@ packages = [{include = "lang_chain_qa", from = "src"}]
 
 [tool.poetry.dependencies]
 python = "^3.10"
-langchain = "0.0.251"
-huggingface-hub = "0.16.4"
+# for a list of `llms` extras, see https://github.com/langchain-ai/langchain/blob/master/libs/langchain/pyproject.toml#L229
+langchain = {version = "0.0.251", extras = ["llms"]} 
 
 
 [build-system]
