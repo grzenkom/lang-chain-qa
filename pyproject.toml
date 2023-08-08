@@ -13,6 +13,9 @@ langchain = {version = "0.0.251", extras = ["llms"]}
 # workaround for "libcublas.so.*[0-9] not found in the system path", https://stackoverflow.com/a/76647180/95
 torch = ">=2.0.0, !=2.0.1"
 
+[tool.poetry.group.dev.dependencies]
+black = "23.7.0"
+
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
