@@ -17,7 +17,7 @@ device = -1
 # the model will be downloaded on first use, if not cached in ~/.cache/huggingface/hub/
 
 # model_id, task = "lmsys/fastchat-t5-3b-v1.0", "text2text-generation"
-# model_id, task = "databricks/dolly-v2-3b            | ?
+# model_id, task = "databricks/dolly-v2-3b, "text-generation"
 # model_id, task = "CobraMamba/mamba-gpt-3b-v3", "text-generation"
 model_id, task = "openlm-research/open_llama_3b_v2", "text-generation"
 
