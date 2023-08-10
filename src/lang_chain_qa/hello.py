@@ -6,7 +6,7 @@ import torch
 from langchain.llms import HuggingFacePipeline
 from langchain import PromptTemplate, LLMChain
 
-assert len(os.environ["HUGGINGFACEHUB_API_TOKEN"]) > 0
+#assert len(os.environ["HUGGINGFACEHUB_API_TOKEN"]) > 0
 
 # choose GPU or CPU
 # TODO: fix error "CUDA out of memory. Tried to allocate 40.00 MiB (GPU 0; 3.81 GiB total capacity; 3.36 GiB already allocated; 26.38 MiB free; 3.37 GiB reserved in total by PyTorch) If reserved memory is >> allocated memory try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF"
@@ -14,10 +14,15 @@ assert len(os.environ["HUGGINGFACEHUB_API_TOKEN"]) > 0
 device = -1
 
 # the model will be downloaded on first use, if not cached in ~/.cache/huggingface/hub/
-model_id = "databricks/dolly-v2-3b"
+
+model_id, task = "lmsys/fastchat-t5-3b-v1.0", "text2text-generation"
+# databricks/dolly-v2-3b            | ?
+# CobraMamba/mamba-gpt-3b-v3        | ?
+# openlm-research/open_llama_3b_v2  | ?
+
 model = HuggingFacePipeline.from_model_id(
     model_id=model_id,
-    task="text-generation",
+    task=task,
     model_kwargs={"temperature": 0, "max_length": 1000},
     device=device
 )
@@ -34,5 +39,12 @@ prompt_template = PromptTemplate(template=text_template, input_variables=["quest
 
 llm_chain = LLMChain(prompt=prompt_template, llm=model)
 
-question = "Who is Sheryl Crow?"
-print(llm_chain(question))
+print(llm_chain("Who is Sheryl Crow?"))
+print(llm_chain("What is a crow?"))
+print(llm_chain("What is nuclear energy, in 20 words or less?"))
+print(llm_chain("What is the purpose of pandas?"))
+print(llm_chain("What is the purpose of Python package named 'pandas'?"))
+print(llm_chain("How can I use 'tqdm'?"))
+print(llm_chain("What's the distance from the Earth to the Sun?"))
+print(llm_chain("Can you land on the Sun?"))
+print(llm_chain("I have 5 apples and 2 pears. How many vegetables do I have?"))
