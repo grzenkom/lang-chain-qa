@@ -1,5 +1,6 @@
 # https://www.markhneedham.com/blog/2023/06/23/hugging-face-run-llm-model-locally-laptop/
 
+import json
 import os
 import torch
 
@@ -15,10 +16,10 @@ device = -1
 
 # the model will be downloaded on first use, if not cached in ~/.cache/huggingface/hub/
 
-model_id, task = "lmsys/fastchat-t5-3b-v1.0", "text2text-generation"
-# databricks/dolly-v2-3b            | ?
-# CobraMamba/mamba-gpt-3b-v3        | ?
-# openlm-research/open_llama_3b_v2  | ?
+# model_id, task = "lmsys/fastchat-t5-3b-v1.0", "text2text-generation"
+# model_id, task = "databricks/dolly-v2-3b            | ?
+# model_id, task = "CobraMamba/mamba-gpt-3b-v3", "text-generation"
+model_id, task = "openlm-research/open_llama_3b_v2", "text-generation"
 
 model = HuggingFacePipeline.from_model_id(
     model_id=model_id,
@@ -39,12 +40,12 @@ prompt_template = PromptTemplate(template=text_template, input_variables=["quest
 
 llm_chain = LLMChain(prompt=prompt_template, llm=model)
 
-print(llm_chain("Who is Sheryl Crow?"))
-print(llm_chain("What is a crow?"))
-print(llm_chain("What is nuclear energy, in 20 words or less?"))
-print(llm_chain("What is the purpose of pandas?"))
-print(llm_chain("What is the purpose of Python package named 'pandas'?"))
-print(llm_chain("How can I use 'tqdm'?"))
-print(llm_chain("What's the distance from the Earth to the Sun?"))
-print(llm_chain("Can you land on the Sun?"))
-print(llm_chain("I have 5 apples and 2 pears. How many vegetables do I have?"))
+print(json.dumps(llm_chain("Who is Sheryl Crow?"), indent=2))
+print(json.dumps(llm_chain("What is a crow?"), indent=2))
+print(json.dumps(llm_chain("What is nuclear energy, in 20 words or less?"), indent=2))
+print(json.dumps(llm_chain("What are pandas?"), indent=2))
+print(json.dumps(llm_chain("What is pandas?"), indent=2))
+print(json.dumps(llm_chain("How can I use 'tqdm'?"), indent=2))
+print(json.dumps(llm_chain("What's the distance from the Earth to the Sun?"), indent=2))
+print(json.dumps(llm_chain("Can you land on the Sun?"), indent=2))
+print(json.dumps(llm_chain("I have 5 apples and 2 pears. How many vegetables do I have? Explain step by step."), indent=2))
