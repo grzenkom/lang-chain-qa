@@ -4,6 +4,8 @@ import json
 import os
 import torch
 
+from datetime import datetime
+
 from langchain.llms import HuggingFacePipeline
 from langchain import PromptTemplate, LLMChain
 
@@ -40,6 +42,8 @@ prompt_template = PromptTemplate(template=text_template, input_variables=["quest
 
 llm_chain = LLMChain(prompt=prompt_template, llm=model)
 
+print(f'Start: {datetime.now()}')
+
 print(json.dumps(llm_chain("Who is Sheryl Crow?"), indent=2))
 print(json.dumps(llm_chain("What is a crow?"), indent=2))
 print(json.dumps(llm_chain("What is nuclear energy, in 20 words or less?"), indent=2))
@@ -49,3 +53,5 @@ print(json.dumps(llm_chain("How can I use 'tqdm'?"), indent=2))
 print(json.dumps(llm_chain("What's the distance from the Earth to the Sun?"), indent=2))
 print(json.dumps(llm_chain("Can you land on the Sun?"), indent=2))
 print(json.dumps(llm_chain("I have 5 apples and 2 pears. How many vegetables do I have? Explain step by step."), indent=2))
+
+print(f'End: {datetime.now()}')
