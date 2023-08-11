@@ -9,8 +9,6 @@ packages = [{include = "lang_chain_qa", from = "src"}]
 [tool.poetry.dependencies]
 python = "^3.10"
 ipywidgets = "8.1.0"
-jupyter = "1.0.0"
-jupyter-nbextensions-configurator = "0.6.3"
 # for a list of `llms` extras, see https://github.com/langchain-ai/langchain/blob/master/libs/langchain/pyproject.toml#L229
 langchain = {version = "0.0.251", extras = ["llms"]}
 # workaround for "libcublas.so.*[0-9] not found in the system path", https://stackoverflow.com/a/76647180/95
