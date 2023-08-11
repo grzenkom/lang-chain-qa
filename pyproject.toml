@@ -14,6 +14,7 @@ jupyterlab = "4.0.4"
 langchain = {version = "0.0.251", extras = ["llms"]}
 # workaround for "libcublas.so.*[0-9] not found in the system path", https://stackoverflow.com/a/76647180/95
 torch = ">=2.0.0, !=2.0.1"
+wikipedia = "1.4.0"
 
 [build-system]
 requires = ["poetry-core"]
