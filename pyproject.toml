@@ -14,12 +14,11 @@ ipywidgets = "8.1.0"
 jupyterlab = "^4.0.4"
 
 # LangChain
-# for a list of `llms` extras, see https://github.com/langchain-ai/langchain/blob/master/libs/langchain/pyproject.toml#L229
-langchain = {version = "0.0.251", extras = ["llms"]}
+chromadb = "0.4.5"
+langchain = {version = "0.0.251", extras = ["llms"]}  # for a list of `llms` extras, see https://github.com/langchain-ai/langchain/blob/master/libs/langchain/pyproject.toml#L229
+sentence-transformers = "2.2.2"
+torch = ">=2.0.0, !=2.0.1"  # workaround for "libcublas.so.*[0-9] not found in the system path", https://stackoverflow.com/a/76647180/95
 wikipedia = "1.4.0"
-
-# workaround for "libcublas.so.*[0-9] not found in the system path", https://stackoverflow.com/a/76647180/95
-torch = ">=2.0.0, !=2.0.1"
 
 [build-system]
 requires = ["poetry-core"]
