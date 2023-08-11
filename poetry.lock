@@ -2664,18 +2664,18 @@ files = [
 
 [[package]]
 name = "langchain"
-version = "0.0.251"
+version = "0.0.262"
 description = "Building applications with LLMs through composability"
 optional = false
 python-versions = ">=3.8.1,<4.0"
 files = [
-    {file = "langchain-0.0.251-py3-none-any.whl", hash = "sha256:b0d3054a93b35177c05629d0631fa81bdba88825765b0bffbd7f875d89f4df9a"},
-    {file = "langchain-0.0.251.tar.gz", hash = "sha256:a70b3e8da7726cf2df87b9ab2df58efb231dcadabd4cdc4849a8f265745e2bbd"},
+    {file = "langchain-0.0.262-py3-none-any.whl", hash = "sha256:2b8b77ba61f208b9ad0c5cf0a651349abb2f448d1804332c5b485c902d05cfbf"},
+    {file = "langchain-0.0.262.tar.gz", hash = "sha256:2cb545cb855ce783f9f272f08a346018b087c0d842012d225ed479ac312624c8"},
 ]
 
 [package.dependencies]
 aiohttp = ">=3.8.3,<4.0.0"
-anthropic = {version = ">=0.3,<0.4", optional = true, markers = "extra == \"llms\" or extra == \"all\""}
+anthropic = {version = ">=0.3,<0.4", optional = true, markers = "extra == \"llms\" or extra == \"all\" or extra == \"extended-testing\""}
 async-timeout = {version = ">=4.0.0,<5.0.0", markers = "python_version < \"3.11\""}
 clarifai = {version = ">=9.1.0", optional = true, markers = "extra == \"llms\" or extra == \"clarifai\" or extra == \"all\""}
 cohere = {version = ">=4,<5", optional = true, markers = "extra == \"llms\" or extra == \"cohere\" or extra == \"all\""}
@@ -2691,7 +2691,7 @@ openapi-schema-pydantic = ">=1.2,<2.0"
 openllm = {version = ">=0.1.19", optional = true, markers = "extra == \"llms\""}
 openlm = {version = ">=0.0.5,<0.0.6", optional = true, markers = "extra == \"llms\" or extra == \"all\""}
 pydantic = ">=1,<2"
-PyYAML = ">=5.4.1"
+PyYAML = ">=5.3"
 requests = ">=2,<3"
 SQLAlchemy = ">=1.4,<3"
 tenacity = ">=8.1.0,<9.0.0"
@@ -2706,7 +2706,7 @@ clarifai = ["clarifai (>=9.1.0)"]
 cohere = ["cohere (>=4,<5)"]
 docarray = ["docarray[hnswlib] (>=0.32.0,<0.33.0)"]
 embeddings = ["sentence-transformers (>=2,<3)"]
-extended-testing = ["atlassian-python-api (>=3.36.0,<4.0.0)", "beautifulsoup4 (>=4,<5)", "bibtexparser (>=1.4.0,<2.0.0)", "cassio (>=0.0.7,<0.0.8)", "chardet (>=5.1.0,<6.0.0)", "esprima (>=4.0.1,<5.0.0)", "geopandas (>=0.13.1,<0.14.0)", "gitpython (>=3.1.32,<4.0.0)", "gql (>=3.4.1,<4.0.0)", "html2text (>=2020.1.16,<2021.0.0)", "jinja2 (>=3,<4)", "jq (>=1.4.1,<2.0.0)", "lxml (>=4.9.2,<5.0.0)", "mwparserfromhell (>=0.6.4,<0.7.0)", "mwxml (>=0.3.3,<0.4.0)", "openai (>=0,<1)", "pandas (>=2.0.1,<3.0.0)", "pdfminer-six (>=20221105,<20221106)", "pgvector (>=0.1.6,<0.2.0)", "psychicapi (>=0.8.0,<0.9.0)", "py-trello (>=0.19.0,<0.20.0)", "pymupdf (>=1.22.3,<2.0.0)", "pypdf (>=3.4.0,<4.0.0)", "pypdfium2 (>=4.10.0,<5.0.0)", "pyspark (>=3.4.0,<4.0.0)", "rank-bm25 (>=0.2.2,<0.3.0)", "rapidfuzz (>=3.1.1,<4.0.0)", "requests-toolbelt (>=1.0.0,<2.0.0)", "scikit-learn (>=1.2.2,<2.0.0)", "streamlit (>=1.18.0,<2.0.0)", "sympy (>=1.12,<2.0)", "telethon (>=1.28.5,<2.0.0)", "tqdm (>=4.48.0)", "xinference (>=0.0.6,<0.0.7)", "zep-python (>=0.32)"]
+extended-testing = ["amazon-textract-caller (<2)", "anthropic (>=0.3,<0.4)", "atlassian-python-api (>=3.36.0,<4.0.0)", "beautifulsoup4 (>=4,<5)", "betabageldb (==0.2.32)", "bibtexparser (>=1.4.0,<2.0.0)", "cassio (>=0.0.7,<0.0.8)", "chardet (>=5.1.0,<6.0.0)", "esprima (>=4.0.1,<5.0.0)", "feedparser (>=6.0.10,<7.0.0)", "geopandas (>=0.13.1,<0.14.0)", "gitpython (>=3.1.32,<4.0.0)", "gql (>=3.4.1,<4.0.0)", "html2text (>=2020.1.16,<2021.0.0)", "jinja2 (>=3,<4)", "jq (>=1.4.1,<2.0.0)", "lxml (>=4.9.2,<5.0.0)", "mwparserfromhell (>=0.6.4,<0.7.0)", "mwxml (>=0.3.3,<0.4.0)", "newspaper3k (>=0.2.8,<0.3.0)", "openai (>=0,<1)", "pandas (>=2.0.1,<3.0.0)", "pdfminer-six (>=20221105,<20221106)", "pgvector (>=0.1.6,<0.2.0)", "psychicapi (>=0.8.0,<0.9.0)", "py-trello (>=0.19.0,<0.20.0)", "pymupdf (>=1.22.3,<2.0.0)", "pypdf (>=3.4.0,<4.0.0)", "pypdfium2 (>=4.10.0,<5.0.0)", "pyspark (>=3.4.0,<4.0.0)", "rank-bm25 (>=0.2.2,<0.3.0)", "rapidfuzz (>=3.1.1,<4.0.0)", "requests-toolbelt (>=1.0.0,<2.0.0)", "scikit-learn (>=1.2.2,<2.0.0)", "streamlit (>=1.18.0,<2.0.0)", "sympy (>=1.12,<2.0)", "telethon (>=1.28.5,<2.0.0)", "tqdm (>=4.48.0)", "xata (>=1.0.0a7,<2.0.0)", "xinference (>=0.0.6,<0.0.7)", "xmltodict (>=0.13.0,<0.14.0)", "zep-python (>=0.32)"]
 javascript = ["esprima (>=4.0.1,<5.0.0)"]
 llms = ["anthropic (>=0.3,<0.4)", "clarifai (>=9.1.0)", "cohere (>=4,<5)", "huggingface_hub (>=0,<1)", "manifest-ml (>=0.0.1,<0.0.2)", "nlpcloud (>=1,<2)", "openai (>=0,<1)", "openllm (>=0.1.19)", "openlm (>=0.0.5,<0.0.6)", "torch (>=1,<3)", "transformers (>=4,<5)", "xinference (>=0.0.6,<0.0.7)"]
 openai = ["openai (>=0,<1)", "tiktoken (>=0.3.2,<0.4.0)"]
@@ -3643,17 +3643,17 @@ pydantic = ">=1.8.2"
 
 [[package]]
 name = "openllm"
-version = "0.2.20"
+version = "0.2.22"
 description = "OpenLLM: Operating LLMs in production"
 optional = false
 python-versions = ">=3.8"
 files = [
-    {file = "openllm-0.2.20-cp311-cp311-macosx_10_16_arm64.whl", hash = "sha256:0e2d82fdd34a486a251797141125f4e07609e3c9309c58757e4b76388460455c"},
-    {file = "openllm-0.2.20-cp311-cp311-macosx_10_16_universal2.whl", hash = "sha256:f8757a8a15baad45947ee580ae625a8400dadf7d7ddcec17038efab701109ab5"},
-    {file = "openllm-0.2.20-cp311-cp311-macosx_10_16_x86_64.whl", hash = "sha256:f1024684b1fc97957ccb4177df1eb464bd8dbe468ba4fd98bc639d9de6be0f99"},
-    {file = "openllm-0.2.20-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:efd4ac20ca7ae764c8b91a7160855b2c3b5ff6e12a60815a653bfe910d298f64"},
-    {file = "openllm-0.2.20-py3-none-any.whl", hash = "sha256:e0b130e1ca0963b5324984f9242f0c9c112123d24b1bb1bda4c9a2d2823ee1a1"},
-    {file = "openllm-0.2.20.tar.gz", hash = "sha256:e852b2c669270ce38387fca07a510561019e95dda3fb58ead9dc0ef3a9bdfcac"},
+    {file = "openllm-0.2.22-cp311-cp311-macosx_10_16_arm64.whl", hash = "sha256:a2158a58c4fd0158c0df91a7035463f670ab3d62dd5bf8abcf2eb8afdcb2f5bf"},
+    {file = "openllm-0.2.22-cp311-cp311-macosx_10_16_universal2.whl", hash = "sha256:7bfaaeb53bf93c3170748a4cf2cde5adc412b2bdc9755227725065399133d09b"},
+    {file = "openllm-0.2.22-cp311-cp311-macosx_10_16_x86_64.whl", hash = "sha256:fd5e16887e9dfb628b1300cbc25c2dc3f794dd538195127bad49161761979459"},
+    {file = "openllm-0.2.22-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:185c91b338b9840ea459d61981bf494e73192798dfc1e10b42856603911df4ac"},
+    {file = "openllm-0.2.22-py3-none-any.whl", hash = "sha256:af6c73a861d9009447da18d855dc0803211b86c0c6d4d7ba014e397f74be94f6"},
+    {file = "openllm-0.2.22.tar.gz", hash = "sha256:3b7506514c8a6fc448faeb700ad29a4629fb308a1c8d62f7a442d0b221878e13"},
 ]
 
 [package.dependencies]
@@ -3844,13 +3844,13 @@ files = [
 
 [[package]]
 name = "optimum"
-version = "1.11.0"
+version = "1.11.1"
 description = "Optimum Library is an extension of the Hugging Face Transformers library, providing a framework to integrate third-party libraries from Hardware Partners and interface with their specific functionality."
 optional = false
 python-versions = ">=3.7.0"
 files = [
-    {file = "optimum-1.11.0-py3-none-any.whl", hash = "sha256:2d1d6202aff0b8c2978818991c8974a7b3672a25fc5b54498d43936cd065d021"},
-    {file = "optimum-1.11.0.tar.gz", hash = "sha256:ba4821db92fa0394d90971b0c23ded612095dec5192921f35ad370f6dd41f991"},
+    {file = "optimum-1.11.1-py3-none-any.whl", hash = "sha256:5dcb43049b05c6a61d34c95c394de4479f640255b5799fcb36bec669dbebf844"},
+    {file = "optimum-1.11.1.tar.gz", hash = "sha256:f483f96e4bc38b3d6913c9c2d31dcbd073a9bdd3c08fcc863328ee9056b6595c"},
 ]
 
 [package.dependencies]
@@ -3867,6 +3867,7 @@ transformers = {version = ">=4.26.0", extras = ["sentencepiece"]}
 benchmark = ["evaluate (>=0.2.0)", "optuna", "scikit-learn", "seqeval", "torchvision", "tqdm"]
 dev = ["Pillow", "black (>=23.1,<24.0)", "diffusers (>=0.17.0)", "einops", "invisible-watermark", "parameterized", "pytest", "pytest-xdist", "requests", "ruff (>=0.0.241,<=0.0.259)", "sacremoses", "torchaudio", "torchvision"]
 diffusers = ["diffusers"]
+doc-build = ["accelerate"]
 exporters = ["onnx", "onnxruntime", "timm"]
 exporters-gpu = ["onnx", "onnxruntime-gpu", "timm"]
 exporters-tf = ["h5py", "numpy (<1.24.0)", "onnx", "onnxruntime", "tensorflow (>=2.4)", "tf2onnx", "timm"]
@@ -3879,7 +3880,7 @@ neuron = ["optimum-neuron[neuron]"]
 neuronx = ["optimum-neuron[neuronx]"]
 nncf = ["optimum-intel[nncf] (>=1.10.1)"]
 onnxruntime = ["datasets (>=1.2.1)", "evaluate", "onnx", "onnxruntime (>=1.11.0)", "protobuf (>=3.20.1)"]
-onnxruntime-gpu = ["datasets (>=1.2.1)", "evaluate", "onnx", "onnxruntime-gpu (>=1.11.0)", "protobuf (>=3.20.1)"]
+onnxruntime-gpu = ["accelerate", "datasets (>=1.2.1)", "evaluate", "onnx", "onnxruntime-gpu (>=1.11.0)", "protobuf (>=3.20.1)"]
 openvino = ["optimum-intel[openvino] (>=1.10.1)"]
 quality = ["black (>=23.1,<24.0)", "ruff (>=0.0.241,<=0.0.259)"]
 tests = ["Pillow", "diffusers (>=0.17.0)", "einops", "invisible-watermark", "parameterized", "pytest", "pytest-xdist", "requests", "sacremoses", "torchaudio", "torchvision"]
@@ -6911,4 +6912,4 @@ testing = ["big-O", "jaraco.functools", "jaraco.itertools", "more-itertools", "p
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.10"
-content-hash = "1434a2165d824301311cca408fdf8bf8d3bbc5760de258069f1f84630a2e511d"
+content-hash = "76ece2bc6c17de8049953859e91af6f5009192bff67d3d7994d6bc73c523d5fe"

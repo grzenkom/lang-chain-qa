@@ -10,7 +10,7 @@ packages = [{include = "lang_chain_qa", from = "src"}]
 python = "^3.10"
 
 # LangChain
-langchain = {version = "0.0.251", extras = ["llms"]}  # for a list of `llms` extras, see https://github.com/langchain-ai/langchain/blob/master/libs/langchain/pyproject.toml#L229
+langchain = {version = "0.0.262", extras = ["llms"]}  # for a list of `llms` extras, see https://github.com/langchain-ai/langchain/blob/master/libs/langchain/pyproject.toml#L229
 torch = ">=2.0.0, !=2.0.1"  # workaround for "libcublas.so.*[0-9] not found in the system path", https://stackoverflow.com/a/76647180/95
 
 # loading and indexing documents for LLMs
