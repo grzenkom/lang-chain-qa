@@ -4591,6 +4591,21 @@ files = [
 ]
 
 [[package]]
+name = "pysqlite3-binary"
+version = "0.5.1"
+description = "DB-API 2.0 interface for Sqlite 3.x"
+optional = false
+python-versions = "*"
+files = [
+    {file = "pysqlite3_binary-0.5.1-cp310-cp310-manylinux_2_24_x86_64.whl", hash = "sha256:4a22cf616b5367b683054f114b5fe6dece302cf12a04730332a310f335a38441"},
+    {file = "pysqlite3_binary-0.5.1-cp311-cp311-manylinux_2_24_x86_64.whl", hash = "sha256:41c17f30a68c1fe87aef88402f9e5ededf1cb319089705fdf2f8fdeeb91f79d1"},
+    {file = "pysqlite3_binary-0.5.1-cp36-cp36m-manylinux_2_24_x86_64.whl", hash = "sha256:1991c12f98771f6446f06161e68878375e6a4abc341a0783bd329eb3dfe0e6eb"},
+    {file = "pysqlite3_binary-0.5.1-cp37-cp37m-manylinux_2_24_x86_64.whl", hash = "sha256:4d1089b986db9b5abe13813a0edd7eb5f693612641ff99e40afc0afed2633b14"},
+    {file = "pysqlite3_binary-0.5.1-cp38-cp38-manylinux_2_24_x86_64.whl", hash = "sha256:102e17ad76878ac8ec4686104b57cd0115a3ba6b82e46625165ff28074a2374e"},
+    {file = "pysqlite3_binary-0.5.1-cp39-cp39-manylinux_2_24_x86_64.whl", hash = "sha256:d038101b39da76c20218af0e625213d7ac4ed00fbac02748878e28551f065cce"},
+]
+
+[[package]]
 name = "python-dateutil"
 version = "2.8.2"
 description = "Extensions to the standard Python datetime module"
@@ -6896,4 +6911,4 @@ testing = ["big-O", "jaraco.functools", "jaraco.itertools", "more-itertools", "p
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.10"
-content-hash = "fbab604e289f6a7347417170be7e9dcf09043d0682fa8bba88fa2020e04b3d16"
+content-hash = "1434a2165d824301311cca408fdf8bf8d3bbc5760de258069f1f84630a2e511d"
