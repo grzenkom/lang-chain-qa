@@ -18,10 +18,13 @@ device = -1
 
 # the model will be downloaded on first use, if not cached in ~/.cache/huggingface/hub/
 
-# model_id, task = "lmsys/fastchat-t5-3b-v1.0", "text2text-generation"
+model_id, task = "lmsys/fastchat-t5-3b-v1.0", "text2text-generation"
 # model_id, task = "databricks/dolly-v2-3b, "text-generation"
 # model_id, task = "CobraMamba/mamba-gpt-3b-v3", "text-generation"
-model_id, task = "openlm-research/open_llama_3b_v2", "text-generation"
+# model_id, task = "openlm-research/open_llama_3b_v2", "text-generation"
+
+# OOM
+# model_id, task = "lmsys/vicuna-7b-v1.5-16k", "text-generation"
 
 model = HuggingFacePipeline.from_model_id(
     model_id=model_id,
@@ -29,6 +32,8 @@ model = HuggingFacePipeline.from_model_id(
     model_kwargs={"temperature": 0, "max_length": 1000},
     device=device
 )
+
+print(f'Creating the chain: {datetime.now()}')
 
 text_template = """
 You are a friendly chatbot assistant that responds conversationally to users' questions.
@@ -42,16 +47,8 @@ prompt_template = PromptTemplate(template=text_template, input_variables=["quest
 
 llm_chain = LLMChain(prompt=prompt_template, llm=model)
 
-print(f'Start: {datetime.now()}')
+print(f'Starting to answer: {datetime.now()}')
 
-print(json.dumps(llm_chain("Who is Sheryl Crow?"), indent=2))
-print(json.dumps(llm_chain("What is a crow?"), indent=2))
-print(json.dumps(llm_chain("What is nuclear energy, in 20 words or less?"), indent=2))
-print(json.dumps(llm_chain("What are pandas?"), indent=2))
-print(json.dumps(llm_chain("What is pandas?"), indent=2))
-print(json.dumps(llm_chain("How can I use 'tqdm'?"), indent=2))
-print(json.dumps(llm_chain("What's the distance from the Earth to the Sun?"), indent=2))
-print(json.dumps(llm_chain("Can you land on the Sun?"), indent=2))
-print(json.dumps(llm_chain("I have 5 apples and 2 pears. How many vegetables do I have? Explain step by step."), indent=2))
+print(json.dumps(llm_chain("The is a Python package called Poliastro - what can I use it for?"), indent=2))
 
-print(f'End: {datetime.now()}')
+print(f'Done answering: {datetime.now()}')
