@@ -14,5 +14,8 @@
     "enabled": true
   },
   "prHourlyLimit": 10,
-  "rebaseWhen": "behind-base-branch"
+  "rebaseWhen": "behind-base-branch",
+  "separateMajorMinor": true,
+  "separateMinorPatch": true,
+  "separateMultipleMajor": true
 }
