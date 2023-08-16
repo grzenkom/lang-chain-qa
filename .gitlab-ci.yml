@@ -15,30 +15,21 @@ default:
     - linux
 
 variables:
-  DOCKER_CONTEXT: $CI_PROJECT_DIR/
-  DOCKER_TAG: latest
-  DOCKERFILE: $CI_PROJECT_DIR/Dockerfile
+  DOCKER_IMAGE_NAME: ${CI_REGISTRY_IMAGE}/py310-poetry
 
 publish_ci_image:
   stage: setup
   extends:
     - .deploy_docker
   rules:
-    - changes:
-        - $DOCKERFILE
+    - if: $CI_PIPELINE_SOURCE == 'merge_request_event' && $CI_COMMIT_BRANCH != $CI_DEFAULT_BRANCH
+      changes:
+        - Dockerfile
 
-.install_deps:
+install_deps:
   stage: build
-  image: python:3.10.12-slim
+  image: ${DOCKER_IMAGE_NAME}:latest
   script:
     - poetry install
   rules:
     - if: $CI_PIPELINE_SOURCE == 'merge_request_event' && $CI_COMMIT_BRANCH != $CI_DEFAULT_BRANCH
-      when: always
-# build:
-#   stage: build-image
-#   extends:
-#   - .build_docker
-#   rules:
-#     - changes:
-#       - docker/**/* # all files under folder 'dockerfiles'
