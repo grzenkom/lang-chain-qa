@@ -7,7 +7,9 @@ RUN apt-get update -qq && \
     # clean up temporary files
     rm -rf /var/cache/*
 
-RUN pip install poetry && \
+RUN pip install --upgrade pip && \
+    pip install poetry && \
     # clean up temporary files
     rm -rf /tmp/* && \
     rm -rf /root/.cache/*
+
