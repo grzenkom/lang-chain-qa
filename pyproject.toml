@@ -21,7 +21,8 @@ wikipedia = "1.4.0"
 
 # Jupyter
 ipywidgets = "8.1.0"
-jupyterlab = "^4.0.4"
+jupyterlab-rise = "0.40.0"
+notebook = "7.0.2"
 
 [build-system]
 requires = ["poetry-core"]
