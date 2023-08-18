@@ -19,7 +19,8 @@ pysqlite3-binary = "0.5.1"
 sentence-transformers = "2.2.2"
 wikipedia = "1.4.0"
 
-# Jupyter (v6, because it works well with rise)
+# Jupyter (v6, because v7 does not work well with RISE yet)
+jupyter-contrib-nbextensions = "0.7.0"
 notebook = "6.5.5"
 rise = "5.7.1"
 
