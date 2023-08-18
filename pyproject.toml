@@ -20,8 +20,8 @@ sentence-transformers = "2.2.2"
 wikipedia = "1.4.0"
 
 # Jupyter
-notebook = "6.0.1"
-rise = "5.7.0"
+notebook = "6.5.5"
+rise = "5.7.1"
 
 [build-system]
 requires = ["poetry-core"]
