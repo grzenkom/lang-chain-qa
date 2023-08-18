@@ -1,0 +1,19 @@
+/* increase font size */
+.rise-enabled .reveal pre {
+  font-size: 140%;
+  line-height: initial;
+}
+
+/* increase slide size https://github.com/hakimel/reveal.js/issues/1554 */
+.reveal .slides {
+  min-height: 95%;
+  min-width: 95%;
+  height: 96mm;
+  width: 128mm;
+  /* border: 5px solid greenyellow; */
+}
+
+/* hide the buttons */
+i#exit_b, i#help_b {
+  display: none
+}
