@@ -17,3 +17,14 @@ more mature.
 jupyter contrib nbextension install --user
 jupyter nbextension enable execute_time/ExecuteTime
 ```
+
+### :construction: Converting to PDF
+
+To be able to convert the notebook to PDF format, you need to install
+[Pandoc](https://pandoc.org/installing.html).
+
+```bash
+brew install pandoc
+```
+
+Also TeX - TODO!
