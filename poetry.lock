@@ -626,28 +626,28 @@ colorama = {version = "*", markers = "platform_system == \"Windows\""}
 
 [[package]]
 name = "cmake"
-version = "3.27.4"
+version = "3.27.2"
 description = "CMake is an open-source, cross-platform family of tools designed to build, test and package software"
 optional = false
 python-versions = "*"
 files = [
-    {file = "cmake-3.27.4-py2.py3-none-macosx_10_10_universal2.macosx_10_10_x86_64.macosx_11_0_arm64.macosx_11_0_universal2.whl", hash = "sha256:1ec505e7138129103328b8cab51999bd25c854bb913b8f0a65e201ae1918f1e0"},
-    {file = "cmake-3.27.4-py2.py3-none-manylinux2010_i686.manylinux_2_12_i686.whl", hash = "sha256:a1c0cfe49415878fb69795b59e698479522e3b087ac79ec33821ddd9494963a0"},
-    {file = "cmake-3.27.4-py2.py3-none-manylinux2010_x86_64.manylinux_2_12_x86_64.whl", hash = "sha256:aa77512679c682c652d6646ba1ae0b85940ca61b7ebaa9eda04a362991e187df"},
-    {file = "cmake-3.27.4-py2.py3-none-manylinux2014_aarch64.manylinux_2_17_aarch64.whl", hash = "sha256:b783183ba46b06131f9d4efaa1c4b5df85ecee8e0ff53155fa227b4c531883f7"},
-    {file = "cmake-3.27.4-py2.py3-none-manylinux2014_i686.manylinux_2_17_i686.whl", hash = "sha256:667cd03986cff764107ab73e41126bf0f53273d82de8c7e188d883bc28426325"},
-    {file = "cmake-3.27.4-py2.py3-none-manylinux2014_ppc64le.manylinux_2_17_ppc64le.whl", hash = "sha256:c00702f47662aa0bed56552096c028f0879aed605f53992b3782558e835b1bcb"},
-    {file = "cmake-3.27.4-py2.py3-none-manylinux2014_s390x.manylinux_2_17_s390x.whl", hash = "sha256:ce2f2e954b8232eb22e081008a85c7114afcb7cf2836d9999c9daab7d882ac9f"},
-    {file = "cmake-3.27.4-py2.py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl", hash = "sha256:a99817fb3563499925ee354724ae69531fd256b00fa842b4d0af4658a875ed6e"},
-    {file = "cmake-3.27.4-py2.py3-none-musllinux_1_1_aarch64.whl", hash = "sha256:76dc8cfe95d74d1c0383ab9627e9dcb600818d04550496cb7a83fe5fab30c5b5"},
-    {file = "cmake-3.27.4-py2.py3-none-musllinux_1_1_i686.whl", hash = "sha256:20d01cad6ca6b29798e2dcfbedb2e7d9cdd8b87f0510e9bd000c2709d9c20474"},
-    {file = "cmake-3.27.4-py2.py3-none-musllinux_1_1_ppc64le.whl", hash = "sha256:d34f5f50cd58cc930a4af1065310a47dac6ac5bcc7ba3df3275d3f4909eab844"},
-    {file = "cmake-3.27.4-py2.py3-none-musllinux_1_1_s390x.whl", hash = "sha256:8cd8708823253d37efb881b33092590f4baef34d01f942c90490c93ea1b32b0c"},
-    {file = "cmake-3.27.4-py2.py3-none-musllinux_1_1_x86_64.whl", hash = "sha256:4e74717977eb31437a7d5a2b9e3bff14b305e4ccf68de6f5a7bb08dba940c6e0"},
-    {file = "cmake-3.27.4-py2.py3-none-win32.whl", hash = "sha256:b46ab194f912a27b1296bfcca66bbb1338b6e75ea7108ac96e13aaf147ff3a73"},
-    {file = "cmake-3.27.4-py2.py3-none-win_amd64.whl", hash = "sha256:9c039693388eb61f764eaa0674f59634f851d79b2177f770a1d48c9497433efa"},
-    {file = "cmake-3.27.4-py2.py3-none-win_arm64.whl", hash = "sha256:ebdbebb004397422fc5f514c5036a63afb41e9c6ca4f5a119c0d779ce35e24ed"},
-    {file = "cmake-3.27.4.tar.gz", hash = "sha256:311c5b1a1fd8f61e29a7b0d6815c107bd735cd551e25dbeec82d9989ddf6c037"},
+    {file = "cmake-3.27.2-py2.py3-none-macosx_10_10_universal2.macosx_10_10_x86_64.macosx_11_0_arm64.macosx_11_0_universal2.whl", hash = "sha256:96ac856c4d6b2104408848f0005a8ab2229d4135b171ea9a03e8c33039ede420"},
+    {file = "cmake-3.27.2-py2.py3-none-manylinux2010_i686.manylinux_2_12_i686.whl", hash = "sha256:11fe6129d07982721c5965fd804a4056b8c6e9c4f482ac9e0fe41bb3abc1ab5f"},
+    {file = "cmake-3.27.2-py2.py3-none-manylinux2010_x86_64.manylinux_2_12_x86_64.whl", hash = "sha256:f0c64e89e2ea59592980c4fe3821d712fee0e74cf87c2aaec5b3ab9aa809a57c"},
+    {file = "cmake-3.27.2-py2.py3-none-manylinux2014_aarch64.manylinux_2_17_aarch64.whl", hash = "sha256:ca7650477dff2a1138776b28b79c0e99127be733d3978922e8f87b56a433eed6"},
+    {file = "cmake-3.27.2-py2.py3-none-manylinux2014_i686.manylinux_2_17_i686.whl", hash = "sha256:ab2e40fe09e76a7ef67da2bbbf7a4cd1f52db4f1c7b6ccdda2539f918830343a"},
+    {file = "cmake-3.27.2-py2.py3-none-manylinux2014_ppc64le.manylinux_2_17_ppc64le.whl", hash = "sha256:980ee19f12c808cb8ddb56fdcee832501a9f9631799d8b4fc625c0a0b5fb4c55"},
+    {file = "cmake-3.27.2-py2.py3-none-manylinux2014_s390x.manylinux_2_17_s390x.whl", hash = "sha256:115d30ca0760e3861d9ad6b3288cd11ee72a785b81227da0c1765d3b84e2c009"},
+    {file = "cmake-3.27.2-py2.py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl", hash = "sha256:efc338c939d6d435890a52458a260bf0942bd8392b648d7532a72c1ec0764e18"},
+    {file = "cmake-3.27.2-py2.py3-none-musllinux_1_1_aarch64.whl", hash = "sha256:7f7438c60ccc01765b67abfb1797787c3b9459d500a804ed70a4cc181bc02204"},
+    {file = "cmake-3.27.2-py2.py3-none-musllinux_1_1_i686.whl", hash = "sha256:294f008734267e0eee1574ad1b911bed137bc907ab19d60a618dab4615aa1fca"},
+    {file = "cmake-3.27.2-py2.py3-none-musllinux_1_1_ppc64le.whl", hash = "sha256:197a34dc62ee149ced343545fac67e5a30b93fda65250b065726f86ce92bdada"},
+    {file = "cmake-3.27.2-py2.py3-none-musllinux_1_1_s390x.whl", hash = "sha256:afb46ad883b174fb64347802ba5878423551dbd5847bb64669c39a5957c06eb7"},
+    {file = "cmake-3.27.2-py2.py3-none-musllinux_1_1_x86_64.whl", hash = "sha256:83611ffd155e270a6b13bbf0cfd4e8688ebda634f448aa2e3734006c745bf33f"},
+    {file = "cmake-3.27.2-py2.py3-none-win32.whl", hash = "sha256:53e12deb893da935e236f93accd47dbe2806620cd7654986234dc4487cc49652"},
+    {file = "cmake-3.27.2-py2.py3-none-win_amd64.whl", hash = "sha256:611f9722c68c40352d38a6c01960ab038c3d0419e7aee3bf18f95b23031e0dfe"},
+    {file = "cmake-3.27.2-py2.py3-none-win_arm64.whl", hash = "sha256:30620326b51ac2ce0d8f476747af6367a7ea21075c4d065fad9443904b07476a"},
+    {file = "cmake-3.27.2.tar.gz", hash = "sha256:7cd6e2d7d5a1125f8c26c4f65214f8c942e3f276f98c16cb62ae382c35609f25"},
 ]
 
 [package.extras]
@@ -1762,13 +1762,13 @@ files = [
 
 [[package]]
 name = "langchain"
-version = "0.0.266"
+version = "0.0.274"
 description = "Building applications with LLMs through composability"
 optional = false
 python-versions = ">=3.8.1,<4.0"
 files = [
-    {file = "langchain-0.0.266-py3-none-any.whl", hash = "sha256:8c4968dc83b77b89ed4612aeb95eff5e24d28d48f2658d8abb26a863a667c525"},
-    {file = "langchain-0.0.266.tar.gz", hash = "sha256:16754e79008fdf1badd1642555bb839d6d4a03b533c686f759f5eb6ba1f37454"},
+    {file = "langchain-0.0.274-py3-none-any.whl", hash = "sha256:402e0518a2e3183498158c159cd50f7d13e948908430f682eebe2741a51ebc2a"},
+    {file = "langchain-0.0.274.tar.gz", hash = "sha256:adc2cf9993765c9d241aae6079497b0f62090bebff05aa985dd92e1b10b8cacb"},
 ]
 
 [package.dependencies]
@@ -1784,9 +1784,8 @@ nlpcloud = {version = ">=1,<2", optional = true, markers = "extra == \"llms\" or
 numexpr = ">=2.8.4,<3.0.0"
 numpy = ">=1,<2"
 openai = {version = ">=0,<1", optional = true, markers = "extra == \"llms\" or extra == \"openai\" or extra == \"azure\" or extra == \"all\" or extra == \"extended-testing\""}
-openapi-schema-pydantic = ">=1.2,<2.0"
 openlm = {version = ">=0.0.5,<0.0.6", optional = true, markers = "extra == \"llms\" or extra == \"all\""}
-pydantic = ">=1,<2"
+pydantic = ">=1,<3"
 PyYAML = ">=5.3"
 requests = ">=2,<3"
 SQLAlchemy = ">=1.4,<3"
@@ -1795,13 +1794,13 @@ torch = {version = ">=1,<3", optional = true, markers = "extra == \"llms\" or ex
 transformers = {version = ">=4,<5", optional = true, markers = "extra == \"llms\" or extra == \"all\""}
 
 [package.extras]
-all = ["O365 (>=2.0.26,<3.0.0)", "aleph-alpha-client (>=2.15.0,<3.0.0)", "amadeus (>=8.1.0)", "arxiv (>=1.4,<2.0)", "atlassian-python-api (>=3.36.0,<4.0.0)", "awadb (>=0.3.9,<0.4.0)", "azure-ai-formrecognizer (>=3.2.1,<4.0.0)", "azure-ai-vision (>=0.11.1b1,<0.12.0)", "azure-cognitiveservices-speech (>=1.28.0,<2.0.0)", "azure-cosmos (>=4.4.0b1,<5.0.0)", "azure-identity (>=1.12.0,<2.0.0)", "beautifulsoup4 (>=4,<5)", "clarifai (>=9.1.0)", "clickhouse-connect (>=0.5.14,<0.6.0)", "cohere (>=4,<5)", "deeplake (>=3.6.8,<4.0.0)", "docarray[hnswlib] (>=0.32.0,<0.33.0)", "duckduckgo-search (>=3.8.3,<4.0.0)", "elasticsearch (>=8,<9)", "esprima (>=4.0.1,<5.0.0)", "faiss-cpu (>=1,<2)", "google-api-python-client (==2.70.0)", "google-auth (>=2.18.1,<3.0.0)", "google-search-results (>=2,<3)", "gptcache (>=0.1.7)", "html2text (>=2020.1.16,<2021.0.0)", "huggingface_hub (>=0,<1)", "jinja2 (>=3,<4)", "jq (>=1.4.1,<2.0.0)", "lancedb (>=0.1,<0.2)", "langkit (>=0.0.6,<0.1.0)", "lark (>=1.1.5,<2.0.0)", "libdeeplake (>=0.0.60,<0.0.61)", "librosa (>=0.10.0.post2,<0.11.0)", "lxml (>=4.9.2,<5.0.0)", "manifest-ml (>=0.0.1,<0.0.2)", "marqo (>=0.11.0,<0.12.0)", "momento (>=1.5.0,<2.0.0)", "nebula3-python (>=3.4.0,<4.0.0)", "neo4j (>=5.8.1,<6.0.0)", "networkx (>=2.6.3,<3.0.0)", "nlpcloud (>=1,<2)", "nltk (>=3,<4)", "nomic (>=1.0.43,<2.0.0)", "openai (>=0,<1)", "openlm (>=0.0.5,<0.0.6)", "opensearch-py (>=2.0.0,<3.0.0)", "pdfminer-six (>=20221105,<20221106)", "pexpect (>=4.8.0,<5.0.0)", "pgvector (>=0.1.6,<0.2.0)", "pinecone-client (>=2,<3)", "pinecone-text (>=0.4.2,<0.5.0)", "psycopg2-binary (>=2.9.5,<3.0.0)", "pymongo (>=4.3.3,<5.0.0)", "pyowm (>=3.3.0,<4.0.0)", "pypdf (>=3.4.0,<4.0.0)", "pytesseract (>=0.3.10,<0.4.0)", "python-arango (>=7.5.9,<8.0.0)", "pyvespa (>=0.33.0,<0.34.0)", "qdrant-client (>=1.3.1,<2.0.0)", "rdflib (>=6.3.2,<7.0.0)", "redis (>=4,<5)", "requests-toolbelt (>=1.0.0,<2.0.0)", "sentence-transformers (>=2,<3)", "singlestoredb (>=0.7.1,<0.8.0)", "tensorflow-text (>=2.11.0,<3.0.0)", "tigrisdb (>=1.0.0b6,<2.0.0)", "tiktoken (>=0.3.2,<0.4.0)", "torch (>=1,<3)", "transformers (>=4,<5)", "weaviate-client (>=3,<4)", "wikipedia (>=1,<2)", "wolframalpha (==5.0.0)"]
-azure = ["azure-ai-formrecognizer (>=3.2.1,<4.0.0)", "azure-ai-vision (>=0.11.1b1,<0.12.0)", "azure-cognitiveservices-speech (>=1.28.0,<2.0.0)", "azure-core (>=1.26.4,<2.0.0)", "azure-cosmos (>=4.4.0b1,<5.0.0)", "azure-identity (>=1.12.0,<2.0.0)", "azure-search-documents (==11.4.0b6)", "openai (>=0,<1)"]
+all = ["O365 (>=2.0.26,<3.0.0)", "aleph-alpha-client (>=2.15.0,<3.0.0)", "amadeus (>=8.1.0)", "arxiv (>=1.4,<2.0)", "atlassian-python-api (>=3.36.0,<4.0.0)", "awadb (>=0.3.9,<0.4.0)", "azure-ai-formrecognizer (>=3.2.1,<4.0.0)", "azure-ai-vision (>=0.11.1b1,<0.12.0)", "azure-cognitiveservices-speech (>=1.28.0,<2.0.0)", "azure-cosmos (>=4.4.0b1,<5.0.0)", "azure-identity (>=1.12.0,<2.0.0)", "beautifulsoup4 (>=4,<5)", "clarifai (>=9.1.0)", "clickhouse-connect (>=0.5.14,<0.6.0)", "cohere (>=4,<5)", "deeplake (>=3.6.8,<4.0.0)", "docarray[hnswlib] (>=0.32.0,<0.33.0)", "duckduckgo-search (>=3.8.3,<4.0.0)", "elasticsearch (>=8,<9)", "esprima (>=4.0.1,<5.0.0)", "faiss-cpu (>=1,<2)", "google-api-python-client (==2.70.0)", "google-auth (>=2.18.1,<3.0.0)", "google-search-results (>=2,<3)", "gptcache (>=0.1.7)", "html2text (>=2020.1.16,<2021.0.0)", "huggingface_hub (>=0,<1)", "jinja2 (>=3,<4)", "jq (>=1.4.1,<2.0.0)", "lancedb (>=0.1,<0.2)", "langkit (>=0.0.6,<0.1.0)", "lark (>=1.1.5,<2.0.0)", "libdeeplake (>=0.0.60,<0.0.61)", "librosa (>=0.10.0.post2,<0.11.0)", "lxml (>=4.9.2,<5.0.0)", "manifest-ml (>=0.0.1,<0.0.2)", "marqo (>=1.2.4,<2.0.0)", "momento (>=1.5.0,<2.0.0)", "nebula3-python (>=3.4.0,<4.0.0)", "neo4j (>=5.8.1,<6.0.0)", "networkx (>=2.6.3,<3.0.0)", "nlpcloud (>=1,<2)", "nltk (>=3,<4)", "nomic (>=1.0.43,<2.0.0)", "openai (>=0,<1)", "openlm (>=0.0.5,<0.0.6)", "opensearch-py (>=2.0.0,<3.0.0)", "pdfminer-six (>=20221105,<20221106)", "pexpect (>=4.8.0,<5.0.0)", "pgvector (>=0.1.6,<0.2.0)", "pinecone-client (>=2,<3)", "pinecone-text (>=0.4.2,<0.5.0)", "psycopg2-binary (>=2.9.5,<3.0.0)", "pymongo (>=4.3.3,<5.0.0)", "pyowm (>=3.3.0,<4.0.0)", "pypdf (>=3.4.0,<4.0.0)", "pytesseract (>=0.3.10,<0.4.0)", "python-arango (>=7.5.9,<8.0.0)", "pyvespa (>=0.33.0,<0.34.0)", "qdrant-client (>=1.3.1,<2.0.0)", "rdflib (>=6.3.2,<7.0.0)", "redis (>=4,<5)", "requests-toolbelt (>=1.0.0,<2.0.0)", "sentence-transformers (>=2,<3)", "singlestoredb (>=0.7.1,<0.8.0)", "tensorflow-text (>=2.11.0,<3.0.0)", "tigrisdb (>=1.0.0b6,<2.0.0)", "tiktoken (>=0.3.2,<0.4.0)", "torch (>=1,<3)", "transformers (>=4,<5)", "weaviate-client (>=3,<4)", "wikipedia (>=1,<2)", "wolframalpha (==5.0.0)"]
+azure = ["azure-ai-formrecognizer (>=3.2.1,<4.0.0)", "azure-ai-vision (>=0.11.1b1,<0.12.0)", "azure-cognitiveservices-speech (>=1.28.0,<2.0.0)", "azure-core (>=1.26.4,<2.0.0)", "azure-cosmos (>=4.4.0b1,<5.0.0)", "azure-identity (>=1.12.0,<2.0.0)", "azure-search-documents (==11.4.0b8)", "openai (>=0,<1)"]
 clarifai = ["clarifai (>=9.1.0)"]
 cohere = ["cohere (>=4,<5)"]
 docarray = ["docarray[hnswlib] (>=0.32.0,<0.33.0)"]
 embeddings = ["sentence-transformers (>=2,<3)"]
-extended-testing = ["amazon-textract-caller (<2)", "atlassian-python-api (>=3.36.0,<4.0.0)", "beautifulsoup4 (>=4,<5)", "bibtexparser (>=1.4.0,<2.0.0)", "cassio (>=0.0.7,<0.0.8)", "chardet (>=5.1.0,<6.0.0)", "esprima (>=4.0.1,<5.0.0)", "faiss-cpu (>=1,<2)", "feedparser (>=6.0.10,<7.0.0)", "geopandas (>=0.13.1,<0.14.0)", "gitpython (>=3.1.32,<4.0.0)", "gql (>=3.4.1,<4.0.0)", "html2text (>=2020.1.16,<2021.0.0)", "jinja2 (>=3,<4)", "jq (>=1.4.1,<2.0.0)", "lxml (>=4.9.2,<5.0.0)", "mwparserfromhell (>=0.6.4,<0.7.0)", "mwxml (>=0.3.3,<0.4.0)", "newspaper3k (>=0.2.8,<0.3.0)", "openai (>=0,<1)", "pandas (>=2.0.1,<3.0.0)", "pdfminer-six (>=20221105,<20221106)", "pgvector (>=0.1.6,<0.2.0)", "psychicapi (>=0.8.0,<0.9.0)", "py-trello (>=0.19.0,<0.20.0)", "pymupdf (>=1.22.3,<2.0.0)", "pypdf (>=3.4.0,<4.0.0)", "pypdfium2 (>=4.10.0,<5.0.0)", "pyspark (>=3.4.0,<4.0.0)", "rank-bm25 (>=0.2.2,<0.3.0)", "rapidfuzz (>=3.1.1,<4.0.0)", "requests-toolbelt (>=1.0.0,<2.0.0)", "scikit-learn (>=1.2.2,<2.0.0)", "streamlit (>=1.18.0,<2.0.0)", "sympy (>=1.12,<2.0)", "telethon (>=1.28.5,<2.0.0)", "tqdm (>=4.48.0)", "xata (>=1.0.0a7,<2.0.0)", "xmltodict (>=0.13.0,<0.14.0)"]
+extended-testing = ["amazon-textract-caller (<2)", "assemblyai (>=0.17.0,<0.18.0)", "atlassian-python-api (>=3.36.0,<4.0.0)", "beautifulsoup4 (>=4,<5)", "bibtexparser (>=1.4.0,<2.0.0)", "cassio (>=0.0.7,<0.0.8)", "chardet (>=5.1.0,<6.0.0)", "esprima (>=4.0.1,<5.0.0)", "faiss-cpu (>=1,<2)", "feedparser (>=6.0.10,<7.0.0)", "geopandas (>=0.13.1,<0.14.0)", "gitpython (>=3.1.32,<4.0.0)", "gql (>=3.4.1,<4.0.0)", "html2text (>=2020.1.16,<2021.0.0)", "jinja2 (>=3,<4)", "jq (>=1.4.1,<2.0.0)", "lxml (>=4.9.2,<5.0.0)", "markdownify (>=0.11.6,<0.12.0)", "mwparserfromhell (>=0.6.4,<0.7.0)", "mwxml (>=0.3.3,<0.4.0)", "newspaper3k (>=0.2.8,<0.3.0)", "openai (>=0,<1)", "openapi-schema-pydantic (>=1.2,<2.0)", "pandas (>=2.0.1,<3.0.0)", "pdfminer-six (>=20221105,<20221106)", "pgvector (>=0.1.6,<0.2.0)", "psychicapi (>=0.8.0,<0.9.0)", "py-trello (>=0.19.0,<0.20.0)", "pymupdf (>=1.22.3,<2.0.0)", "pypdf (>=3.4.0,<4.0.0)", "pypdfium2 (>=4.10.0,<5.0.0)", "pyspark (>=3.4.0,<4.0.0)", "rank-bm25 (>=0.2.2,<0.3.0)", "rapidfuzz (>=3.1.1,<4.0.0)", "requests-toolbelt (>=1.0.0,<2.0.0)", "scikit-learn (>=1.2.2,<2.0.0)", "streamlit (>=1.18.0,<2.0.0)", "sympy (>=1.12,<2.0)", "telethon (>=1.28.5,<2.0.0)", "tqdm (>=4.48.0)", "xata (>=1.0.0a7,<2.0.0)", "xmltodict (>=0.13.0,<0.14.0)"]
 javascript = ["esprima (>=4.0.1,<5.0.0)"]
 llms = ["clarifai (>=9.1.0)", "cohere (>=4,<5)", "huggingface_hub (>=0,<1)", "manifest-ml (>=0.0.1,<0.0.2)", "nlpcloud (>=1,<2)", "openai (>=0,<1)", "openlm (>=0.0.5,<0.0.6)", "torch (>=1,<3)", "transformers (>=4,<5)"]
 openai = ["openai (>=0,<1)", "tiktoken (>=0.3.2,<0.4.0)"]
@@ -2735,20 +2734,6 @@ embeddings = ["matplotlib", "numpy", "openpyxl (>=3.0.7)", "pandas (>=1.2.3)", "
 wandb = ["numpy", "openpyxl (>=3.0.7)", "pandas (>=1.2.3)", "pandas-stubs (>=1.1.0.11)", "wandb"]
 
 [[package]]
-name = "openapi-schema-pydantic"
-version = "1.2.4"
-description = "OpenAPI (v3) specification schema as pydantic class"
-optional = false
-python-versions = ">=3.6.1"
-files = [
-    {file = "openapi-schema-pydantic-1.2.4.tar.gz", hash = "sha256:3e22cf58b74a69f752cc7e5f1537f6e44164282db2700cbbcd3bb99ddd065196"},
-    {file = "openapi_schema_pydantic-1.2.4-py3-none-any.whl", hash = "sha256:a932ecc5dcbb308950282088956e94dea069c9823c84e507d64f6b622222098c"},
-]
-
-[package.dependencies]
-pydantic = ">=1.8.2"
-
-[[package]]
 name = "openlm"
 version = "0.0.5"
 description = "Drop-in OpenAI-compatible that can call LLMs from other providers"
@@ -2860,7 +2845,6 @@ files = [
     {file = "Pillow-10.0.0-cp311-cp311-musllinux_1_1_aarch64.whl", hash = "sha256:3b08d4cc24f471b2c8ca24ec060abf4bebc6b144cb89cba638c720546b1cf538"},
     {file = "Pillow-10.0.0-cp311-cp311-musllinux_1_1_x86_64.whl", hash = "sha256:d737a602fbd82afd892ca746392401b634e278cb65d55c4b7a8f48e9ef8d008d"},
     {file = "Pillow-10.0.0-cp311-cp311-win_amd64.whl", hash = "sha256:3a82c40d706d9aa9734289740ce26460a11aeec2d9c79b7af87bb35f0073c12f"},
-    {file = "Pillow-10.0.0-cp311-cp311-win_arm64.whl", hash = "sha256:bc2ec7c7b5d66b8ec9ce9f720dbb5fa4bace0f545acd34870eff4a369b44bf37"},
     {file = "Pillow-10.0.0-cp312-cp312-macosx_10_10_x86_64.whl", hash = "sha256:d80cf684b541685fccdd84c485b31ce73fc5c9b5d7523bf1394ce134a60c6883"},
     {file = "Pillow-10.0.0-cp312-cp312-macosx_11_0_arm64.whl", hash = "sha256:76de421f9c326da8f43d690110f0e79fe3ad1e54be811545d7d91898b4c8493e"},
     {file = "Pillow-10.0.0-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:81ff539a12457809666fef6624684c008e00ff6bf455b4b89fd00a140eecd640"},
@@ -2870,7 +2854,6 @@ files = [
     {file = "Pillow-10.0.0-cp312-cp312-musllinux_1_1_aarch64.whl", hash = "sha256:d50b6aec14bc737742ca96e85d6d0a5f9bfbded018264b3b70ff9d8c33485551"},
     {file = "Pillow-10.0.0-cp312-cp312-musllinux_1_1_x86_64.whl", hash = "sha256:00e65f5e822decd501e374b0650146063fbb30a7264b4d2744bdd7b913e0cab5"},
     {file = "Pillow-10.0.0-cp312-cp312-win_amd64.whl", hash = "sha256:f31f9fdbfecb042d046f9d91270a0ba28368a723302786c0009ee9b9f1f60199"},
-    {file = "Pillow-10.0.0-cp312-cp312-win_arm64.whl", hash = "sha256:1ce91b6ec08d866b14413d3f0bbdea7e24dfdc8e59f562bb77bc3fe60b6144ca"},
     {file = "Pillow-10.0.0-cp38-cp38-macosx_10_10_x86_64.whl", hash = "sha256:349930d6e9c685c089284b013478d6f76e3a534e36ddfa912cde493f235372f3"},
     {file = "Pillow-10.0.0-cp38-cp38-macosx_11_0_arm64.whl", hash = "sha256:3a684105f7c32488f7153905a4e3015a3b6c7182e106fe3c37fbb5ef3e6994c3"},
     {file = "Pillow-10.0.0-cp38-cp38-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:b4f69b3700201b80bb82c3a97d5e9254084f6dd5fb5b16fc1a7b974260f89f43"},
@@ -5028,4 +5011,4 @@ testing = ["big-O", "jaraco.functools", "jaraco.itertools", "more-itertools", "p
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.10"
-content-hash = "a1e89a373c651ecedcfd91ae3a00ec206aded29f60bc57acce87ce0d4619cb7b"
+content-hash = "972cd8bcd92afe175792467e29d74d9f629650527e66413dd27a45d821cd15c8"
