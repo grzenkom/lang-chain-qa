@@ -1,6 +1,18 @@
-# Question and Answer with LangChain
+# Building a Q&A engine with LangChain and open-source LLMs
 
-:construction: DRAFT :construction:
+The main object in this repository is the `qa_engine.ipynb` notebook.
+
+It contains a presentation showing how to run a large language model (LLM)
+on a laptop using LangChain and then index Web documents, to query their
+content with natural language.
+
+There are different ways to view the presentation:
+
+1. `jupyter notebook qa_engine.ipynb` and then `Alt+R` to enter the presentation
+   mode,
+2. open the notebook [`qa_engine.ipynb`](./qa_engine.ipynb) in GitLab/GitHub,
+3. download one of the HTML files [`qa_engine.html`](./qa_engine.html) or
+   [`qa_engine.slides.html`](./qa_engine.slides.html).
 
 ## Jupyter
 
@@ -18,13 +30,10 @@ jupyter contrib nbextension install --user
 jupyter nbextension enable execute_time/ExecuteTime
 ```
 
-### :construction: Converting to PDF
-
-To be able to convert the notebook to PDF format, you need to install
-[Pandoc](https://pandoc.org/installing.html).
+### Converting to HTML
 
 ```bash
-brew install pandoc
-```
+jupyter nbconvert qa_engine.ipynb --to html
 
-Also TeX - TODO!
+jupyter nbconvert qa_engine.ipynb --to slides
+```
