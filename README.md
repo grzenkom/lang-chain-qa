@@ -11,8 +11,7 @@ There are different ways to view the presentation:
 1. `jupyter notebook qa_engine.ipynb` and then `Alt+R` to enter the presentation
    mode,
 2. open the notebook [`qa_engine.ipynb`](./qa_engine.ipynb) in GitLab/GitHub,
-3. download one of the HTML files [`qa_engine.html`](./qa_engine.html) or
-   [`qa_engine.slides.html`](./qa_engine.slides.html).
+3. download one of the HTML files from the [`export/`](./export/) directory.
 
 ## Jupyter
 
@@ -33,7 +32,7 @@ jupyter nbextension enable execute_time/ExecuteTime
 ### Converting to HTML
 
 ```bash
-jupyter nbconvert qa_engine.ipynb --to html
+jupyter nbconvert qa_engine.ipynb --to html --output-dir ./export/ --execute
 
-jupyter nbconvert qa_engine.ipynb --to slides
+jupyter nbconvert qa_engine.ipynb --to slides --output-dir ./export/ --execute
 ```
