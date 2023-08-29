@@ -4,6 +4,8 @@
     - explain the idea
     - point the main files
 2. ~~Delete `src` and `tests`~~
+2. Clean up the links scattered through the notebook
+2. Add high-level explanation of Retrieval Augmented Generation
 2. Mention other tested models?
     - `model_id, task = "databricks/dolly-v2-3b, "text-generation"`
     - `model_id, task = "CobraMamba/mamba-gpt-3b-v3", "text-generation"`
