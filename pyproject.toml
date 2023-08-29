@@ -1,10 +1,9 @@
 [tool.poetry]
 name = "lang-chain-qa"
-version = "0.1.0"
+authors = ["Marek Grzenkowicz <marek.grzenkowicz@roche.com>"]
 description = ""
-authors = ["grzenkom <marek.grzenkowicz@roche.com>"]
 readme = "README.md"
-packages = [{include = "lang_chain_qa", from = "src"}]
+version = "0.1.0"
 
 [tool.poetry.dependencies]
 python = "^3.10"
