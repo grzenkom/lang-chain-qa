@@ -11,28 +11,33 @@ There are different ways to view the presentation:
 1. `jupyter notebook qa_engine.ipynb` and then `Alt+R` to enter the presentation
    mode,
 2. open the notebook [`qa_engine.ipynb`](./qa_engine.ipynb) in GitLab/GitHub,
-3. download one of the HTML files from the [`export/`](./export/) directory.
+3. download one of the `exported_*.html` files (if you choose the "slides" file,
+   you also to download the `images/` directory).
 
 ## Jupyter
 
-Jupyter Notebook v6 is used, because [RISE](https://github.com/damianavila/RISE)
-does not work well with Jupyter Lab or v7. This may change when
+Jupyter Notebook v6 is used, because the [RISE](https://github.com/damianavila/RISE)
+extension does not work well with Jupyter Lab or v7. This may change when
 [jupyterlab-contrib/rise](https://github.com/jupyterlab-contrib/rise) becomes
 more mature.
 
-### Execute Time extension
+### Other small extensions for Jupyter
 
-[execute_time](https://github.com/ipython-contrib/jupyter_contrib_nbextensions/tree/master/src/jupyter_contrib_nbextensions/nbextensions/execute_time)
+- [execute_time](https://github.com/ipython-contrib/jupyter_contrib_nbextensions/tree/master/src/jupyter_contrib_nbextensions/nbextensions/execute_time)
+- [export_embedded](https://github.com/ipython-contrib/jupyter_contrib_nbextensions/tree/master/src/jupyter_contrib_nbextensions/nbextensions/export_embedded)
 
 ```bash
 jupyter contrib nbextension install --user
+
 jupyter nbextension enable execute_time/ExecuteTime
+jupyter nbextension enable export_embedded/main
 ```
 
 ### Converting to HTML
 
 ```bash
-jupyter nbconvert qa_engine.ipynb --to html --output-dir ./export/ --execute
+jupyter nbconvert qa_engine.ipynb --to html_embed --output ./exported_qa_engine.one_page.html
 
-jupyter nbconvert qa_engine.ipynb --to slides --output-dir ./export/ --execute
+# export_embedded does not add the option to export slides with embedded images
+jupyter nbconvert qa_engine.ipynb --to slides --output ./exported_qa_engine
 ```

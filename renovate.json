@@ -8,7 +8,7 @@
     "grzenkom"
   ],
   "ignorePaths": [
-    "export/"
+    "*.html"
   ],
   "labels": [
     "Type::Maintenance"
