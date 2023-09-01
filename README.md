@@ -10,11 +10,11 @@ content with natural language.
 
 There are different ways to view the presentation:
 
-1. `jupyter notebook qa_engine.ipynb` and then `Alt+R` to enter the presentation
-   mode,
-2. open the notebook [`qa_engine.ipynb`](./qa_engine.ipynb) in GitLab/GitHub,
-3. download one of the `exported_*.html` files (if you choose the "slides" file,
-   you also to download the `images/` directory).
+1. 🐍 `jupyter notebook qa_engine.ipynb` and then `Alt+R` to enter
+   the presentation mode,
+2. 👉 open the notebook [`qa_engine.ipynb`](./qa_engine.ipynb) in GitLab/GitHub,
+3. 📥 download one of the `exported_*.html` files (if you choose the "slides"
+   file, you also to download the `images/` directory).
 
 ## Jupyter
 
