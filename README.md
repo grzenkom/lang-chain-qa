@@ -6,6 +6,8 @@ It contains a presentation showing how to run a large language model (LLM)
 on a laptop using LangChain and then index Web documents, to query their
 content with natural language.
 
+## How to open?
+
 There are different ways to view the presentation:
 
 1. `jupyter notebook qa_engine.ipynb` and then `Alt+R` to enter the presentation
