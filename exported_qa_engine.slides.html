@@ -7448,31 +7448,25 @@ main {
 </div>
 </div>
 </div></section></section><section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=a698d5f5">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="About-Roche">About Roche<a class="anchor-link" href="#About-Roche">¶</a></h2><p>TODO: add a screenshot or two from the official presentation</p>
-</div>
-</div>
-</div>
-</div></section></section><section><section>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=ea2265f8">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Large-Language-Models-did-not-appear-out-of-nowhere">Large Language Models did not appear out of nowhere<a class="anchor-link" href="#Large-Language-Models-did-not-appear-out-of-nowhere">¶</a></h2><ul>
-<li>Natural language processing (NLP)</li>
+<h2 id="Large-Language-Models-did-not-appear-out-of-nowhere">Large Language Models did not appear out of nowhere<a class="anchor-link" href="#Large-Language-Models-did-not-appear-out-of-nowhere">¶</a></h2><h3 id="Natural-language-processing-(NLP)">Natural language processing (NLP)<a class="anchor-link" href="#Natural-language-processing-(NLP)">¶</a></h3><ul>
+<li>Standardized tasks (question answering, summarization, sentiment analysis, ...)</li>
+<li>Evaluation benchmarks</li>
+<li><strong>Leaderboards</strong></li>
+<li>Word and sentence <strong>embeddings</strong> (word2vec, GloVe, fastText, ELMo, BERT, ...)</li>
+</ul>
+<h3 id="Machine-learning">Machine learning<a class="anchor-link" href="#Machine-learning">¶</a></h3><ul>
 <li>Neural networks</li>
 <li>Deep learning</li>
+<li>CUDA</li>
 <li>Transformer architecture</li>
-<li>Word and sentence embeddings</li>
-<li>Evaluation benchmarks and leaderboards</li>
-<li>🚧TODO: add more examples</li>
+<li>Attention (ML technique)</li>
+<li>Reinforced learning</li>
 </ul>
 </div>
 </div>
@@ -7486,7 +7480,7 @@ main {
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <h2 id="Goals">Goals<a class="anchor-link" href="#Goals">¶</a></h2><ol>
 <li>Implement an LLM application without deep NLP knowledge</li>
-<li>Develop locally, instead of making call to an API of a cloud-hosted model</li>
+<li>Develop and run it locally, instead of making API calls to a cloud-hosted model</li>
 <li>Use an open-source model</li>
 <li>Create a prototype with an actual business problem in mind</li>
 </ol>
@@ -7507,7 +7501,7 @@ main {
 </ul>
 </li>
 <li><a href="https://huggingface.co/lmsys/fastchat-t5-3b-v1.0">lmsys/fastchat-t5-3b-v1.0</a> - compact, open-source LLM from <a href="https://lmsys.org">lmsys.org</a></li>
-<li><a href="https://www.trychroma.com">ChromaDB</a> - embedding database (vector database)</li>
+<li><a href="https://www.trychroma.com">ChromaDB</a> - embedding database (vector store)</li>
 <li><a href="https://jupyter.org/">Jupyter Notebook</a> with the <a href="https://github.com/damianavila/RISE">RISE</a> extension - IDE with a slideshow feature</li>
 </ul>
 </div>
@@ -7535,8 +7529,8 @@ main {
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <ul>
-<li><a href="https://huggingface.co/CobraMamba/mamba-gpt-3b-v3">CobraMamba/mamba-gpt-3b-v3</a> claims to surpass some 12B models (<a href="https://huggingface.co/spaces/HuggingFaceH4/open_llm_leaderboard">Open LLM leaderboard</a>)<ul>
-<li>but it is slow (<a href="https://huggingface.co/spaces/optimum/llm-perf-leaderboard">Open LLM performace leaderboard</a>)</li>
+<li><a href="https://huggingface.co/spaces/HuggingFaceH4/open_llm_leaderboard">Open LLM leaderboard</a> ➡ <a href="https://huggingface.co/CobraMamba/mamba-gpt-3b-v3"><code>CobraMamba/mamba-gpt-3b-v3</code></a> claims to surpass some 12B models<ul>
+<li>but it is slow ➡ <a href="https://huggingface.co/spaces/optimum/llm-perf-leaderboard">Open LLM performace leaderboard</a></li>
 </ul>
 </li>
 </ul>
@@ -7553,7 +7547,7 @@ main {
 <ul>
 <li><a href="https://huggingface.co/lmsys/fastchat-t5-3b-v1.0">lmsys/fastchat-t5-3b-v1.0</a><ul>
 <li><em>A commercial-friendly, compact, yet powerful chat assistant</em></li>
-<li>The first model to actually generate any response on my laptop 🎉</li>
+<li>The first model to actually generate any response on my laptop in reasonable time 🎉</li>
 </ul>
 </li>
 </ul>
@@ -7576,16 +7570,13 @@ main {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [23]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [1]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># do NOT use in production or even during development!</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># use with care! important warnings may get hidden</span>
 
-<span class="c1"># import warnings</span>
-<span class="c1"># warnings.filterwarnings('ignore')</span>
-
-<span class="c1"># import logging</span>
-<span class="c1"># logging.basicConfig(level=logging.CRITICAL, format='')</span>
+<span class="kn">import</span> <span class="nn">warnings</span>
+<span class="n">warnings</span><span class="o">.</span><span class="n">filterwarnings</span><span class="p">(</span><span class="s1">'ignore'</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -7596,10 +7587,11 @@ main {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [24]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [2]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># https://github.com/chroma-core/chroma/blob/main/chromadb/__init__.py#L57</span>
+
 <span class="kn">import</span> <span class="nn">sys</span>
 <span class="nb">__import__</span><span class="p">(</span><span class="s2">"pysqlite3"</span><span class="p">)</span>
 <span class="n">sys</span><span class="o">.</span><span class="n">modules</span><span class="p">[</span><span class="s2">"sqlite3"</span><span class="p">]</span> <span class="o">=</span> <span class="n">sys</span><span class="o">.</span><span class="n">modules</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="s2">"pysqlite3"</span><span class="p">)</span>
@@ -7624,22 +7616,21 @@ main {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [25]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [3]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">langchain.llms</span> <span class="kn">import</span> <span class="n">HuggingFacePipeline</span>
-<span class="kn">from</span> <span class="nn">langchain</span> <span class="kn">import</span> <span class="n">PromptTemplate</span><span class="p">,</span> <span class="n">LLMChain</span>
 </pre></div>
 </div>
 </div>
 </div>
 </div>
-</div><div class="fragment"><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=035dd36a">
+</div><div class="fragment"><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=035dd36a">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [26]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [4]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">model_id</span><span class="p">,</span> <span class="n">task</span> <span class="o">=</span> <span class="s2">"lmsys/fastchat-t5-3b-v1.0"</span><span class="p">,</span> <span class="s2">"text2text-generation"</span>
@@ -7653,8 +7644,23 @@ main {
         <span class="s2">"temperature"</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
         <span class="s2">"max_length"</span><span class="p">:</span> <span class="mi">1000</span>
     <span class="p">},</span>
+    <span class="n">device</span><span class="o">=-</span><span class="mi">1</span><span class="p">,</span>  <span class="c1"># CPU</span>
 <span class="p">)</span>
 </pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
+<pre>You are using the default legacy behaviour of the &lt;class 'transformers.models.t5.tokenization_t5.T5Tokenizer'&gt;. If you see this, DO NOT PANIC! This is expected, and simply means that the `legacy` (previous) behavior will be used so nothing changes for you. If you want to use the new behaviour, set `legacy=True`. This should only be set if you understand what it means, and thouroughly read the reason why this was added as explained in https://github.com/huggingface/transformers/pull/24565
+Device has 1 GPUs available. Provide device={deviceId} to `from_model_id` to use availableGPUs for execution. deviceId is -1 (default) for CPU and can be a positive integer associated with CUDA device id.
+</pre>
 </div>
 </div>
 </div>
@@ -7675,14 +7681,17 @@ main {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [27]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [5]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">template_text</span> <span class="o">=</span> <span class="s2">"""</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">langchain</span> <span class="kn">import</span> <span class="n">PromptTemplate</span><span class="p">,</span> <span class="n">LLMChain</span>
+
+<span class="n">template_text</span> <span class="o">=</span> <span class="s2">"""</span>
 <span class="si">{question}</span>
 <span class="s2">"""</span>
 <span class="n">template</span> <span class="o">=</span> <span class="n">PromptTemplate</span><span class="p">(</span><span class="n">template</span><span class="o">=</span><span class="n">template_text</span><span class="p">,</span> <span class="n">input_variables</span><span class="o">=</span><span class="p">[</span><span class="s2">"question"</span><span class="p">])</span>
-<span class="n">llm_chain</span> <span class="o">=</span> <span class="n">LLMChain</span><span class="p">(</span><span class="n">prompt</span><span class="o">=</span><span class="n">template</span><span class="p">,</span> <span class="n">llm</span><span class="o">=</span><span class="n">model</span><span class="p">)</span>
+
+<span class="n">llm_chain</span> <span class="o">=</span> <span class="n">LLMChain</span><span class="p">(</span><span class="n">llm</span><span class="o">=</span><span class="n">model</span><span class="p">,</span> <span class="n">prompt</span><span class="o">=</span><span class="n">template</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -7693,7 +7702,7 @@ main {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [28]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [6]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">llm_chain</span><span class="p">(</span><span class="s2">"Who is Sheryl Crow?"</span><span class="p">)[</span><span class="s2">"text"</span><span class="p">]</span>
@@ -7707,7 +7716,7 @@ main {
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[28]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[6]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
 <pre>'&lt;pad&gt; Sheryl  Crow  is  an  American  singer,  songwriter,  and  actress.  She  is  best  known  for  her  role  as  the  lead  singer  and  lead  guitarist  of  the  rock  band  The  Band wagon,  and  for  her  role  as  the  lead  singer  and  lead  guitarist  of  the  alternative  rock  band  The  Mamas  and  the  Papas.  Crow  has  also  been  a  member  of  the  band  The  Mamas  and  the  Papas  since  its  formation  in  1995.\n'</pre>
 </div>
@@ -7730,7 +7739,7 @@ main {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [29]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [7]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">template_text</span> <span class="o">=</span> <span class="s2">"""</span>
@@ -7738,7 +7747,8 @@ main {
 <span class="si">{question}</span>
 <span class="s2">"""</span>
 <span class="n">template</span> <span class="o">=</span> <span class="n">PromptTemplate</span><span class="p">(</span><span class="n">template</span><span class="o">=</span><span class="n">template_text</span><span class="p">,</span> <span class="n">input_variables</span><span class="o">=</span><span class="p">[</span><span class="s2">"question"</span><span class="p">])</span>
-<span class="n">llm_chain</span> <span class="o">=</span> <span class="n">LLMChain</span><span class="p">(</span><span class="n">prompt</span><span class="o">=</span><span class="n">template</span><span class="p">,</span> <span class="n">llm</span><span class="o">=</span><span class="n">model</span><span class="p">)</span>
+
+<span class="n">llm_chain</span> <span class="o">=</span> <span class="n">LLMChain</span><span class="p">(</span><span class="n">llm</span><span class="o">=</span><span class="n">model</span><span class="p">,</span> <span class="n">prompt</span><span class="o">=</span><span class="n">template</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -7749,7 +7759,7 @@ main {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [30]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [8]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">llm_chain</span><span class="p">(</span><span class="s2">"Who is Sheryl Crow?"</span><span class="p">)[</span><span class="s2">"text"</span><span class="p">]</span>
@@ -7763,7 +7773,7 @@ main {
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[30]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[8]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
 <pre>'&lt;pad&gt; Singer-songwriter'</pre>
 </div>
@@ -7786,7 +7796,7 @@ main {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [31]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [9]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">llm_chain</span><span class="p">(</span><span class="s2">"Who is Poland located?"</span><span class="p">)[</span><span class="s2">"text"</span><span class="p">]</span>
@@ -7800,7 +7810,7 @@ main {
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[31]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[9]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
 <pre>'&lt;pad&gt; Europe'</pre>
 </div>
@@ -7812,7 +7822,7 @@ main {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [32]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [10]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">llm_chain</span><span class="p">(</span><span class="s2">"What is Bialowieza Forest?"</span><span class="p">)[</span><span class="s2">"text"</span><span class="p">]</span>
@@ -7826,7 +7836,7 @@ main {
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[32]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[10]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
 <pre>'&lt;pad&gt; Bialowieza Forest is a protected forest in Poland.'</pre>
 </div>
@@ -7849,7 +7859,7 @@ main {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [33]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [11]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">llm_chain</span><span class="p">(</span><span class="s2">"What does the name 'Bialowieza' mean in English?"</span><span class="p">)[</span><span class="s2">"text"</span><span class="p">]</span>
@@ -7863,7 +7873,7 @@ main {
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[33]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[11]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
 <pre>'&lt;pad&gt; "Birch Tree"'</pre>
 </div>
@@ -7875,7 +7885,7 @@ main {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [34]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [12]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">llm_chain</span><span class="p">(</span><span class="s2">"What's the length of the Tsar's Trail and where does it begin?"</span><span class="p">)[</span><span class="s2">"text"</span><span class="p">]</span>
@@ -7889,7 +7899,7 @@ main {
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[34]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[12]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
 <pre>"&lt;pad&gt; The Tsar's Trail is a 900 mile long trail that begins in Moscow and ends in St. Petersburg."</pre>
 </div>
@@ -7897,16 +7907,13 @@ main {
 </div>
 </div>
 </div></div></section></section><section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=10d63fce">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=5045560d">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Retrieval-Augmented-Generation-(RAG)">Retrieval Augmented Generation (RAG)<a class="anchor-link" href="#Retrieval-Augmented-Generation-(RAG)">¶</a></h2><p>TODO:</p>
-<ol>
-<li>add some information, maybe the diagram from <a href="https://python.langchain.com/docs/use_cases/question_answering/#overview">https://python.langchain.com/docs/use_cases/question_answering/#overview</a></li>
-</ol>
+<h1 id="What-now?">What now?<a class="anchor-link" href="#What-now?">¶</a></h1><h1 id="Should-I-fine-tune-the-base-mode?-%F0%9F%A4%94">Should I fine-tune the base mode? 🤔<a class="anchor-link" href="#Should-I-fine-tune-the-base-mode?-%F0%9F%A4%94">¶</a></h1>
 </div>
 </div>
 </div>
@@ -7917,9 +7924,74 @@ main {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Text-embeddings-(vectorization)">Text embeddings (vectorization)<a class="anchor-link" href="#Text-embeddings-(vectorization)">¶</a></h2><ol start="2">
-<li>explain what embeddings are, with screenshots</li>
-</ol>
+<h2 id="Embeddings-and--cosine-similarity">Embeddings and  cosine similarity<a class="anchor-link" href="#Embeddings-and--cosine-similarity">¶</a></h2><p><img alt="cosine similarity in 2D" src="./images/vectors-cos-sim-500.png"/></p>
+<p>The actual embedding spaces have <strong>100s of dimensions</strong>! 🤯</p>
+<p>Source: <a href="https://github.com/grzenkom/do-androids-read/">https://github.com/grzenkom/do-androids-read/</a></p>
+</div>
+</div>
+</div>
+</div></section></section><section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=a5321677">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="Arithmetic-of-word-vectors">Arithmetic of word vectors<a class="anchor-link" href="#Arithmetic-of-word-vectors">¶</a></h2><p>\begin{equation}
+\LARGE{\mathit{ v_{parent} + v_{woman} \approx v_{x} }}
+\end{equation}</p>
+</div>
+</div>
+</div>
+</div><div class="fragment">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=565a48e4">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p><img alt="sum of &amp;quot;parent&amp;quot; and &amp;quot;woman&amp;quot; vectors" src="./images/vector-mother.png"/></p>
+</div>
+</div>
+</div>
+</div></div><div class="fragment">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=af7a39a6">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>\begin{equation}
+\LARGE{\mathit{ v_{seawater} - v_{salt} \approx v_{x} }}
+\end{equation}</p>
+</div>
+</div>
+</div>
+</div></div><div class="fragment">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=4c20367a">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p><img alt="difference of &amp;quot;seawater&amp;quot; and &amp;quot;salt&amp;quot; vectors" src="./images/vector-water.png"/></p>
+<p>Source: <a href="https://github.com/grzenkom/do-androids-read/">https://github.com/grzenkom/do-androids-read/</a></p>
+</div>
+</div>
+</div>
+</div></div></section></section><section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=10d63fce">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="Retrieval-Augmented-Generation-(RAG)">Retrieval Augmented Generation (RAG)<a class="anchor-link" href="#Retrieval-Augmented-Generation-(RAG)">¶</a></h2><p>With RAG, documents can be stored as embeddings in a vector database, queried
+for based on semantic meaning, and then these relevant splits are passed into
+<strong>model prompt via the context window</strong>. LLM uses these text chunks from
+original documents to generate an answer.</p>
+<p><img alt="Question Answering flow" src="images/langchain-qa-flow.jpeg"/></p>
+<p>Source: <a href="https://python.langchain.com/docs/use_cases/question_answering/#overview">https://python.langchain.com/docs/use_cases/question_answering/#overview</a></p>
 </div>
 </div>
 </div>
@@ -7930,11 +8002,11 @@ main {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="LangChain-integrations">LangChain integrations<a class="anchor-link" href="#LangChain-integrations">¶</a></h2><p>TODO: add a screenshot here</p>
-<ol>
-<li><a href="https://integrations.langchain.com/">https://integrations.langchain.com/</a></li>
-<li><a href="https://python.langchain.com/docs/integrations/document_loaders">https://python.langchain.com/docs/integrations/document_loaders</a></li>
+<h2 id="LangChain-integrations">LangChain integrations<a class="anchor-link" href="#LangChain-integrations">¶</a></h2><ol>
+<li><a href="https://integrations.langchain.com/llms">Catalog</a></li>
+<li><a href="https://python.langchain.com/docs/integrations">Documentation</a></li>
 </ol>
+<p><img alt="LangChain integrations" src="./images/langchain-integrations.png"/></p>
 </div>
 </div>
 </div>
@@ -7954,13 +8026,13 @@ main {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [35]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [13]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">langchain.document_loaders</span> <span class="kn">import</span> <span class="n">WikipediaLoader</span>
 
-<span class="n">loader</span> <span class="o">=</span> <span class="n">WikipediaLoader</span><span class="p">(</span><span class="s2">"Białowieża_Forest"</span><span class="p">,</span> <span class="n">lang</span><span class="o">=</span><span class="s2">"en"</span><span class="p">)</span>
-<span class="n">wiki_page</span> <span class="o">=</span> <span class="n">loader</span><span class="o">.</span><span class="n">load</span><span class="p">()</span>
+<span class="n">loader</span> <span class="o">=</span> <span class="n">WikipediaLoader</span><span class="p">(</span><span class="n">query</span><span class="o">=</span><span class="s2">"Białowieża Forest"</span><span class="p">,</span> <span class="n">lang</span><span class="o">=</span><span class="s2">"en"</span><span class="p">)</span>
+<span class="n">bf_docs</span> <span class="o">=</span> <span class="n">loader</span><span class="o">.</span><span class="n">load</span><span class="p">()</span>
 </pre></div>
 </div>
 </div>
@@ -7971,12 +8043,14 @@ main {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [36]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [14]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">langchain.document_loaders</span> <span class="kn">import</span> <span class="n">WebBaseLoader</span>
 
-<span class="n">loader</span> <span class="o">=</span> <span class="n">WebBaseLoader</span><span class="p">(</span><span class="s2">"https://bpn.com.pl/index.php?option=com_content&amp;task=view&amp;id=651&amp;Itemid=297&amp;lang=en"</span><span class="p">)</span>
+<span class="n">loader</span> <span class="o">=</span> <span class="n">WebBaseLoader</span><span class="p">(</span>
+    <span class="s2">"https://bpn.com.pl/index.php?option=com_content&amp;task=view&amp;id=651&amp;Itemid=297&amp;lang=en"</span>
+<span class="p">)</span>
 <span class="n">bpn_page</span> <span class="o">=</span> <span class="n">loader</span><span class="o">.</span><span class="n">load</span><span class="p">()</span>
 </pre></div>
 </div>
@@ -7984,6 +8058,34 @@ main {
 </div>
 </div>
 </div></div></section></section><section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=57986189">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="RAG-step-1---load-documents">RAG step 1 - load documents<a class="anchor-link" href="#RAG-step-1---load-documents">¶</a></h2>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=d5ab6176">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [15]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># additionally, load some unreleated documents to test the vector store later</span>
+
+<span class="n">loader</span> <span class="o">=</span> <span class="n">WikipediaLoader</span><span class="p">(</span><span class="n">query</span><span class="o">=</span><span class="s2">"Kubeflow"</span><span class="p">,</span> <span class="n">lang</span><span class="o">=</span><span class="s2">"en"</span><span class="p">)</span>
+<span class="n">kf_docs</span> <span class="o">=</span> <span class="n">loader</span><span class="o">.</span><span class="n">load</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div></section></section><section><section>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=9e47197f">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
@@ -7999,13 +8101,15 @@ main {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [37]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [16]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">langchain.text_splitter</span> <span class="kn">import</span> <span class="n">RecursiveCharacterTextSplitter</span>
 
-<span class="n">text_splitter</span> <span class="o">=</span> <span class="n">RecursiveCharacterTextSplitter</span><span class="p">(</span><span class="n">chunk_size</span> <span class="o">=</span> <span class="mi">500</span><span class="p">,</span> <span class="n">chunk_overlap</span> <span class="o">=</span> <span class="mi">0</span><span class="p">)</span>
-<span class="n">all_splits</span> <span class="o">=</span> <span class="n">text_splitter</span><span class="o">.</span><span class="n">split_documents</span><span class="p">(</span><span class="n">wiki_page</span> <span class="o">+</span> <span class="n">bpn_page</span><span class="p">)</span>
+<span class="n">text_splitter</span> <span class="o">=</span> <span class="n">RecursiveCharacterTextSplitter</span><span class="p">(</span>
+    <span class="n">chunk_size</span> <span class="o">=</span> <span class="mi">500</span><span class="p">,</span> <span class="n">chunk_overlap</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="p">)</span>
+<span class="n">all_splits</span> <span class="o">=</span> <span class="n">text_splitter</span><span class="o">.</span><span class="n">split_documents</span><span class="p">(</span><span class="n">bf_docs</span> <span class="o">+</span> <span class="n">bpn_page</span> <span class="o">+</span> <span class="n">kf_docs</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -8027,7 +8131,7 @@ main {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [38]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [17]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">langchain.embeddings</span> <span class="kn">import</span> <span class="n">HuggingFaceEmbeddings</span>
@@ -8035,10 +8139,10 @@ main {
 <span class="n">hf_embeddings</span> <span class="o">=</span> <span class="n">HuggingFaceEmbeddings</span><span class="p">(</span>
     <span class="n">model_name</span><span class="o">=</span><span class="s2">"sentence-transformers/all-mpnet-base-v2"</span><span class="p">,</span>
     <span class="n">model_kwargs</span><span class="o">=</span><span class="p">{</span>
-        <span class="s1">'device'</span><span class="p">:</span> <span class="s1">'cpu'</span>
+        <span class="s2">"device"</span><span class="p">:</span> <span class="s2">"cpu"</span>
     <span class="p">},</span>
     <span class="n">encode_kwargs</span><span class="o">=</span><span class="p">{</span>
-        <span class="s1">'normalize_embeddings'</span><span class="p">:</span> <span class="kc">False</span>
+        <span class="s2">"normalize_embeddings"</span><span class="p">:</span> <span class="kc">False</span>
     <span class="p">}</span>
 <span class="p">)</span>
 </pre></div>
@@ -8062,13 +8166,60 @@ main {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [39]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [18]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">langchain.vectorstores</span> <span class="kn">import</span> <span class="n">Chroma</span>
 
-<span class="n">vector_store</span> <span class="o">=</span> <span class="n">Chroma</span><span class="o">.</span><span class="n">from_documents</span><span class="p">(</span><span class="n">documents</span><span class="o">=</span><span class="n">all_splits</span><span class="p">,</span> <span class="n">embedding</span><span class="o">=</span><span class="n">hf_embeddings</span><span class="p">)</span>
+<span class="n">vector_store</span> <span class="o">=</span> <span class="n">Chroma</span><span class="o">.</span><span class="n">from_documents</span><span class="p">(</span>
+    <span class="n">documents</span><span class="o">=</span><span class="n">all_splits</span><span class="p">,</span> <span class="n">embedding</span><span class="o">=</span><span class="n">hf_embeddings</span>
+<span class="p">)</span>
 </pre></div>
+</div>
+</div>
+</div>
+</div>
+</div></section></section><section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=5ab34f81">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="RAG-detour---test-similarity-search">RAG detour - test similarity search<a class="anchor-link" href="#RAG-detour---test-similarity-search">¶</a></h2>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=39b07025">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [38]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">relevant_splits</span> <span class="o">=</span> <span class="n">vector_store</span><span class="o">.</span><span class="n">similarity_search_with_score</span><span class="p">(</span><span class="s2">"kubeflow"</span><span class="p">,</span> <span class="n">k</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>
+<span class="p">[</span>
+    <span class="sa">f</span><span class="s1">'</span><span class="si">{</span><span class="n">score</span><span class="si">:</span><span class="s1">.3f</span><span class="si">}</span><span class="s1"> 🔷 </span><span class="si">{</span><span class="n">doc_split</span><span class="o">.</span><span class="n">page_content</span><span class="p">[:</span><span class="mi">60</span><span class="p">]</span><span class="si">}</span><span class="s1"> ...'</span>
+    <span class="k">for</span> <span class="n">doc_split</span><span class="p">,</span> <span class="n">score</span> <span class="ow">in</span> <span class="n">relevant_splits</span>
+<span class="p">]</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[38]:</div>
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
+<pre>['0.598 🔷 Kubeflow is an open-source platform for machine learning and ...',
+ '0.790 🔷 === Kubeflow Pipelines for model training ===\nOnce developed ...',
+ '0.803 🔷 become among the top 2% of GitHub projects ever. Kubeflow 1. ...',
+ '0.814 🔷 === KServe for model serving ===\nThe KServe component (previ ...',
+ '0.827 🔷 The Kubeflow project was first announced at KubeCon + CloudN ...']</pre>
 </div>
 </div>
 </div>
@@ -8089,20 +8240,37 @@ main {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [40]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [39]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">langchain.chains</span> <span class="kn">import</span> <span class="n">RetrievalQA</span>
-<span class="kn">from</span> <span class="nn">langchain.llms</span> <span class="kn">import</span> <span class="n">HuggingFacePipeline</span>
 
-<span class="c1"># the QA chain is constructed with the LLM model (loaded earlier) and the embedding database</span>
-<span class="n">qa_chain</span> <span class="o">=</span> <span class="n">RetrievalQA</span><span class="o">.</span><span class="n">from_chain_type</span><span class="p">(</span><span class="n">llm</span><span class="o">=</span><span class="n">model</span><span class="p">,</span> <span class="n">retriever</span><span class="o">=</span><span class="n">vector_store</span><span class="o">.</span><span class="n">as_retriever</span><span class="p">())</span>
+<span class="c1"># the QA chain is constructed with the LLM model (loaded previously)</span>
+<span class="c1"># and the embedding database</span>
+<span class="n">qa_chain</span> <span class="o">=</span> <span class="n">RetrievalQA</span><span class="o">.</span><span class="n">from_chain_type</span><span class="p">(</span>
+    <span class="n">llm</span><span class="o">=</span><span class="n">model</span><span class="p">,</span> <span class="n">retriever</span><span class="o">=</span><span class="n">vector_store</span><span class="o">.</span><span class="n">as_retriever</span><span class="p">()</span>
+<span class="p">)</span>
 </pre></div>
 </div>
 </div>
 </div>
 </div>
-</div></section></section><section><section>
+</div><div class="fragment">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=8da2a814">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="RetrievalQA-chain---processing-steps"><code>RetrievalQA</code> chain - processing steps<a class="anchor-link" href="#RetrievalQA-chain---processing-steps">¶</a></h3><ol>
+<li>query the vector database for document splits relevant to the question,</li>
+<li>pass the retrieved splits into the model prompt,</li>
+<li>have the LLM generate an answer based on original documents.</li>
+</ol>
+</div>
+</div>
+</div>
+</div></div></section></section><section><section>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=07b9f19b">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
@@ -8118,7 +8286,7 @@ main {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [41]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [21]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">question</span> <span class="o">=</span> <span class="s2">"What does the name 'Bialowieza' mean in English?"</span>
@@ -8134,9 +8302,9 @@ main {
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[41]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[21]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
-<pre>'&lt;pad&gt; "White  Tower"  in  Polish.\n'</pre>
+<pre>"&lt;pad&gt; The  name  'Bialowieza'  means  'White  Tower'  in  English.\n"</pre>
 </div>
 </div>
 </div>
@@ -8146,7 +8314,7 @@ main {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [42]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [22]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">question</span> <span class="o">=</span> <span class="s2">"What's the length of the Tsar's Trail and where does it begin?"</span>
@@ -8162,7 +8330,7 @@ main {
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[42]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[22]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
 <pre>'&lt;pad&gt; 4  km  long,  starts  at  Przed  Kosym  Mostem  depot.\n'</pre>
 </div>
@@ -8185,7 +8353,7 @@ main {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [43]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [23]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">question</span> <span class="o">=</span> <span class="s2">"Is Bialowieza Forest famous for its walking trails?"</span>
@@ -8201,9 +8369,9 @@ main {
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[43]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[23]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
-<pre>'&lt;pad&gt; No,  it  is  known  for  its  undergrowth  plants  and  animal  trails.\n'</pre>
+<pre>'&lt;pad&gt; No,  only  scientists  can  navigate  freely.\n'</pre>
 </div>
 </div>
 </div>
@@ -8215,11 +8383,6 @@ main {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Summary">Summary<a class="anchor-link" href="#Summary">¶</a></h2><ol>
-<li>Working locally is possible</li>
-<li>LangChain is powerful
-... or is it too obvious?</li>
-</ol>
 <h2 id="Next-steps">Next steps<a class="anchor-link" href="#Next-steps">¶</a></h2><ol>
 <li>Other loaders<ul>
 <li>PDF files</li>
@@ -8230,6 +8393,8 @@ main {
 </li>
 <li>Conversational interface</li>
 <li>Memory</li>
+<li>Larger model</li>
+<li>GPU processing</li>
 </ol>
 </div>
 </div>
@@ -8241,10 +8406,30 @@ main {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Resources">Resources<a class="anchor-link" href="#Resources">¶</a></h2><ol>
+<h2 id="Links">Links<a class="anchor-link" href="#Links">¶</a></h2><h3 id="Overview">Overview<a class="anchor-link" href="#Overview">¶</a></h3><ul>
+<li><a href="https://blog.quastor.org/p/openai-trained-chatgpt">How OpenAI trained ChatGPT</a><ul>
+<li>🎥 <a href="https://www.youtube.com/watch?v=s6zNXZaIiiI">State of GPT | Andrej Karpathy</a></li>
+</ul>
+</li>
+<li><a href="https://simonwillison.net/2023/Aug/3/weird-world-of-llms">Catching up on the weird world of LLMs</a></li>
+<li><a href="https://willthompson.name/what-we-know-about-llms-primer">What We Know About LLMs  (Primer)</a></li>
+<li><a href="https://moultano.wordpress.com/2023/06/28/the-many-ways-that-digital-minds-can-know">The Many Ways that Digital Minds Can Know</a></li>
+</ul>
+<h3 id="Tutorials">Tutorials<a class="anchor-link" href="#Tutorials">¶</a></h3><ul>
 <li><a href="https://www.markhneedham.com/blog/2023/06/23/hugging-face-run-llm-model-locally-laptop">Running a Hugging Face Large Language Model (LLM) locally on my laptop</a></li>
-</ol>
-<p>TODO: collect all useful links here</p>
+<li><a href="https://www.tidepool.so/2023/08/17/why-you-probably-dont-need-to-fine-tune-an-llm/">Why You (Probably) Don’t Need to Fine-tune an LLM</a></li>
+</ul>
+<h3 id="Challenges">Challenges<a class="anchor-link" href="#Challenges">¶</a></h3><ul>
+<li><a href="https://huyenchip.com/2023/08/16/llm-research-open-challenges.html">Open challenges in LLM research</a></li>
+<li><a href="https://owasp.org/www-project-top-10-for-large-language-model-applications">OWASP Top 10 for Large Language Model Applications</a></li>
+</ul>
+<h3 id="Skepticism">Skepticism<a class="anchor-link" href="#Skepticism">¶</a></h3><ul>
+<li><a href="https://gist.github.com/veekaybee/be375ab33085102f9027853128dc5f0e">Anti-hype LLM reading list</a></li>
+<li><a href="https://garymarcus.substack.com/p/what-if-generative-ai-turned-out">What if Generative AI turned out to be a Dud?</a><ul>
+<li>And <a href="https://garymarcus.substack.com">Marcus on AI</a> in general</li>
+</ul>
+</li>
+</ul>
 </div>
 </div>
 </div>
@@ -8255,7 +8440,12 @@ main {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Thank-you!">Thank you!<a class="anchor-link" href="#Thank-you!">¶</a></h2><p>TODO: add go.roche.com links to the GitHub repository</p>
+<p><img alt="Roche logo" src="images/roche-logo-blue.png" style="float: right;" width="150"/></p>
+<p> </p>
+<p> </p>
+<h1 id="Doing-now-what-patients-need-next">Doing now what patients need next<a class="anchor-link" href="#Doing-now-what-patients-need-next">¶</a></h1><p> </p>
+<p> </p>
+<p>TODO: add go.roche.com links to the GitHub repository</p>
 </div>
 </div>
 </div>
