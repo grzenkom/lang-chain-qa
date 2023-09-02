@@ -1,4 +1,5 @@
 # TODO
 
-1. Refresh the exported HTML files
-2. Promote the meetup on Twitter, maybe LinkedIn too
+1. Bring back the hidden slides
+2. Refresh the exported HTML files
+3. Promote the meetup on Twitter, maybe LinkedIn too
