@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html lang="en"> 
+<html lang="en">
 <head><meta charset="utf-8"/>
 <meta content="chrome=1" http-equiv="X-UA-Compatible"/>
 <meta content="yes" name="apple-mobile-web-app-capable"/>
@@ -7478,11 +7478,15 @@ main {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Goals">Goals<a class="anchor-link" href="#Goals">¶</a></h2><ol>
-<li>Implement an LLM application without deep NLP knowledge</li>
-<li>Develop and run it locally, instead of making API calls to a cloud-hosted model</li>
-<li>Use an open-source model</li>
-<li>Create a prototype with an actual business problem in mind</li>
+<h2 id="Objectives">Objectives<a class="anchor-link" href="#Objectives">¶</a></h2><ol>
+<li>Build an LLM application <strong>without extensive NLP expertise</strong></li>
+<li>Enable <strong>local development and execution</strong>, reducing reliance on cloud-hosted APIs</li>
+<li>Utilize <strong>open-source models</strong></li>
+<li>Prototype a solution for a <strong>real business challenge</strong><ol>
+<li>Query proprietary company documents using natural language</li>
+<li>Create a ChatGPT-like user experience</li>
+</ol>
+</li>
 </ol>
 </div>
 </div>
@@ -7723,7 +7727,29 @@ Device has 1 GPUs available. Provide device={deviceId} to `from_model_id` to use
 </div>
 </div>
 </div>
-</div></div></section></section><section><section>
+</div></div></section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=45e5b74f">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="My-2019-prediction-about-language-models-being-unable-to-augment-knowledge-...">My 2019 prediction about language models being unable to augment knowledge ...<a class="anchor-link" href="#My-2019-prediction-about-language-models-being-unable-to-augment-knowledge-...">¶</a></h2><p><img alt="'Run, Baby, Run' and deaths of Huxley and Kennedy" src="./images/sheryl-crow-huxley-kennedy.png"/></p>
+</div>
+</div>
+</div>
+</div></section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=4a9190d2">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="...-stands-the-test-of-time-in-2023!-%F0%9F%98%AE-(for-this-particular-example)">... stands the test of time in 2023! 😮 (for this particular example)<a class="anchor-link" href="#...-stands-the-test-of-time-in-2023!-%F0%9F%98%AE-(for-this-particular-example)">¶</a></h2><p><img alt="'Run, Baby, Run' confuses ChatGPT" src="./images/sheryl-crow-chatgpt.png"/></p>
+</div>
+</div>
+</div>
+</div></section></section><section><section>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=26aafabb">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
@@ -7799,7 +7825,7 @@ Device has 1 GPUs available. Provide device={deviceId} to `from_model_id` to use
 <div class="jp-InputPrompt jp-InputArea-prompt">In [9]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">llm_chain</span><span class="p">(</span><span class="s2">"Who is Poland located?"</span><span class="p">)[</span><span class="s2">"text"</span><span class="p">]</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">llm_chain</span><span class="p">(</span><span class="s2">"Where is Poland located?"</span><span class="p">)[</span><span class="s2">"text"</span><span class="p">]</span>
 </pre></div>
 </div>
 </div>
@@ -7825,7 +7851,7 @@ Device has 1 GPUs available. Provide device={deviceId} to `from_model_id` to use
 <div class="jp-InputPrompt jp-InputArea-prompt">In [10]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">llm_chain</span><span class="p">(</span><span class="s2">"What is Bialowieza Forest?"</span><span class="p">)[</span><span class="s2">"text"</span><span class="p">]</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">llm_chain</span><span class="p">(</span><span class="s2">"What is the Bialowieza Forest?"</span><span class="p">)[</span><span class="s2">"text"</span><span class="p">]</span>
 </pre></div>
 </div>
 </div>
@@ -8195,12 +8221,12 @@ original documents to generate an answer.</p>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [19]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [24]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">relevant_splits</span> <span class="o">=</span> <span class="n">vector_store</span><span class="o">.</span><span class="n">similarity_search_with_score</span><span class="p">(</span><span class="s2">"kubeflow"</span><span class="p">,</span> <span class="n">k</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>
 <span class="p">[</span>
-    <span class="sa">f</span><span class="s1">'</span><span class="si">{</span><span class="n">score</span><span class="si">:</span><span class="s1">.3f</span><span class="si">}</span><span class="s1"> 🔷 </span><span class="si">{</span><span class="n">doc_split</span><span class="o">.</span><span class="n">page_content</span><span class="p">[:</span><span class="mi">60</span><span class="p">]</span><span class="si">}</span><span class="s1"> ...'</span>
+    <span class="sa">f</span><span class="s1">'</span><span class="si">{</span><span class="n">score</span><span class="si">:</span><span class="s1">.3f</span><span class="si">}</span><span class="s1"> | </span><span class="si">{</span><span class="n">doc_split</span><span class="o">.</span><span class="n">page_content</span><span class="p">[:</span><span class="mi">60</span><span class="p">]</span><span class="si">}</span><span class="s1"> ...'</span>
     <span class="k">for</span> <span class="n">doc_split</span><span class="p">,</span> <span class="n">score</span> <span class="ow">in</span> <span class="n">relevant_splits</span>
 <span class="p">]</span>
 </pre></div>
@@ -8213,13 +8239,13 @@ original documents to generate an answer.</p>
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[19]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[24]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
-<pre>['0.598 🔷 Kubeflow is an open-source platform for machine learning and ...',
- '0.790 🔷 === Kubeflow Pipelines for model training ===\nOnce developed ...',
- '0.803 🔷 become among the top 2% of GitHub projects ever. Kubeflow 1. ...',
- '0.814 🔷 === KServe for model serving ===\nThe KServe component (previ ...',
- '0.827 🔷 The Kubeflow project was first announced at KubeCon + CloudN ...']</pre>
+<pre>['0.598 | Kubeflow is an open-source platform for machine learning and ...',
+ '0.790 | === Kubeflow Pipelines for model training ===\nOnce developed ...',
+ '0.803 | become among the top 2% of GitHub projects ever. Kubeflow 1. ...',
+ '0.814 | === KServe for model serving ===\nThe KServe component (previ ...',
+ '0.827 | The Kubeflow project was first announced at KubeCon + CloudN ...']</pre>
 </div>
 </div>
 </div>
@@ -8277,7 +8303,7 @@ original documents to generate an answer.</p>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="RAG-step-6---use-Q&amp;A-chain-to-query-the-loaded-documents">RAG step 6 - use Q&amp;A chain to query the loaded documents<a class="anchor-link" href="#RAG-step-6---use-Q&amp;A-chain-to-query-the-loaded-documents">¶</a></h2>
+<h2 id="RAG-step-6---use-the-Q&amp;A-chain-to-query-the-loaded-documents">RAG step 6 - use the Q&amp;A chain to query the loaded documents<a class="anchor-link" href="#RAG-step-6---use-the-Q&amp;A-chain-to-query-the-loaded-documents">¶</a></h2>
 </div>
 </div>
 </div>
@@ -8384,7 +8410,7 @@ original documents to generate an answer.</p>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <h2 id="Next-steps">Next steps<a class="anchor-link" href="#Next-steps">¶</a></h2><ol>
-<li>Other loaders<ul>
+<li>Other data loaders<ul>
 <li>PDF files</li>
 <li>slide decks</li>
 <li>Google Sites</li>
@@ -8392,7 +8418,7 @@ original documents to generate an answer.</p>
 </ul>
 </li>
 <li>Conversational interface</li>
-<li>Memory</li>
+<li>Memory of the conversation</li>
 <li>Larger model</li>
 <li>GPU processing</li>
 </ol>
@@ -8419,33 +8445,28 @@ original documents to generate an answer.</p>
 <li><a href="https://www.markhneedham.com/blog/2023/06/23/hugging-face-run-llm-model-locally-laptop">Running a Hugging Face Large Language Model (LLM) locally on my laptop</a></li>
 <li><a href="https://www.tidepool.so/2023/08/17/why-you-probably-dont-need-to-fine-tune-an-llm/">Why You (Probably) Don’t Need to Fine-tune an LLM</a></li>
 </ul>
-<h3 id="Challenges">Challenges<a class="anchor-link" href="#Challenges">¶</a></h3><ul>
+</div>
+</div>
+</div>
+</div></section></section><section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=7940b3df">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="Links-(cont.)">Links (cont.)<a class="anchor-link" href="#Links-(cont.)">¶</a></h2><h3 id="Challenges">Challenges<a class="anchor-link" href="#Challenges">¶</a></h3><ul>
 <li><a href="https://huyenchip.com/2023/08/16/llm-research-open-challenges.html">Open challenges in LLM research</a></li>
 <li><a href="https://owasp.org/www-project-top-10-for-large-language-model-applications">OWASP Top 10 for Large Language Model Applications</a></li>
 </ul>
 <h3 id="Skepticism">Skepticism<a class="anchor-link" href="#Skepticism">¶</a></h3><ul>
+<li>🎥 <a href="https://www.youtube.com/watch?v=SvBR0OGT5VI">Why AI Is Incredibly Smart and Shockingly Stupid | Yejin Choi</a></li>
 <li><a href="https://gist.github.com/veekaybee/be375ab33085102f9027853128dc5f0e">Anti-hype LLM reading list</a></li>
 <li><a href="https://garymarcus.substack.com/p/what-if-generative-ai-turned-out">What if Generative AI turned out to be a Dud?</a><ul>
 <li>And <a href="https://garymarcus.substack.com">Marcus on AI</a> in general</li>
 </ul>
 </li>
 </ul>
-</div>
-</div>
-</div>
-</div></section></section><section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=8fbec57e">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p><img alt="Roche logo" src="images/roche-logo-blue.png" style="float: right;" width="150"/></p>
-<p> </p>
-<p> </p>
-<h1 id="Doing-now-what-patients-need-next">Doing now what patients need next<a class="anchor-link" href="#Doing-now-what-patients-need-next">¶</a></h1><p> </p>
-<p> </p>
-<h2 id="%E2%8F%AC-GitHub-repository:-go.roche.com/zsbit">⏬ GitHub repository: <a href="https://go.roche.com/zsbit">go.roche.com/zsbit</a><a class="anchor-link" href="#%E2%8F%AC-GitHub-repository:-go.roche.com/zsbit">¶</a></h2>
 </div>
 </div>
 </div>
