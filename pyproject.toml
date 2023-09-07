@@ -18,6 +18,10 @@ pysqlite3-binary = "0.5.1"
 sentence-transformers = "2.2.2"
 wikipedia = "1.4.0"
 
+# word embeddings
+spacy = "3.6.1"
+en_core_web_md = { url = "https://github.com/explosion/spacy-models/releases/download/en_core_web_md-3.6.0/en_core_web_md-3.6.0.tar.gz" }
+
 # Jupyter (v6, because v7 does not work well with RISE yet)
 jupyter-contrib-nbextensions = "0.7.0"
 notebook = "6.5.5"
