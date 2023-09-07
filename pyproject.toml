@@ -9,7 +9,7 @@ version = "0.1.0"
 python = "^3.10"
 
 # LangChain
-langchain = {version = "0.0.281", extras = ["llms"]}  # for a list of `llms` extras, see https://github.com/langchain-ai/langchain/blob/master/libs/langchain/pyproject.toml#L229
+langchain = {version = "0.0.283", extras = ["llms"]}  # for a list of `llms` extras, see https://github.com/langchain-ai/langchain/blob/master/libs/langchain/pyproject.toml#L229
 torch = ">=2.0.0, !=2.0.1"  # workaround for "libcublas.so.*[0-9] not found in the system path", https://stackoverflow.com/a/76647180/95
 
 # loading and indexing documents for RAG
