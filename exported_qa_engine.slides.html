@@ -7588,7 +7588,7 @@ main {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Some-duct-tape-first">Some duct tape first<a class="anchor-link" href="#Some-duct-tape-first">¶</a></h2>
+<h2 id="Some-duct-tape-first-%F0%9F%99%88">Some duct tape first 🙈<a class="anchor-link" href="#Some-duct-tape-first-%F0%9F%99%88">¶</a></h2>
 </div>
 </div>
 </div>
@@ -7604,6 +7604,10 @@ main {
 
 <span class="kn">import</span> <span class="nn">warnings</span>
 <span class="n">warnings</span><span class="o">.</span><span class="n">filterwarnings</span><span class="p">(</span><span class="s1">'ignore'</span><span class="p">)</span>
+
+<span class="kn">import</span> <span class="nn">logging</span>
+<span class="kn">from</span> <span class="nn">transformers.utils</span> <span class="kn">import</span> <span class="n">logging</span>
+<span class="n">logging</span><span class="o">.</span><span class="n">set_verbosity</span><span class="p">(</span><span class="n">logging</span><span class="o">.</span><span class="n">ERROR</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -7684,15 +7688,8 @@ main {
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>/home/users/grzenkom/.pyenv/versions/3.10.12/envs/lang-chain-qa-env/lib/python3.10/site-packages/bitsandbytes/libbitsandbytes_cpu.so: undefined symbol: cadam32bit_grad_fp32
-</pre>
-</div>
-</div>
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>You are using the default legacy behaviour of the &lt;class 'transformers.models.t5.tokenization_t5.T5Tokenizer'&gt;. If you see this, DO NOT PANIC! This is expected, and simply means that the `legacy` (previous) behavior will be used so nothing changes for you. If you want to use the new behaviour, set `legacy=False`. This should only be set if you understand what it means, and thouroughly read the reason why this was added as explained in https://github.com/huggingface/transformers/pull/24565
+<pre>Device has 1 GPUs available. Provide device={deviceId} to `from_model_id` to use availableGPUs for execution. deviceId is -1 (default) for CPU and can be a positive integer associated with CUDA device id.
 </pre>
 </div>
 </div>
@@ -8159,6 +8156,9 @@ original documents to generate an answer.</p>
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">langchain.text_splitter</span> <span class="kn">import</span> <span class="n">RecursiveCharacterTextSplitter</span>
 
+<span class="c1"># RecursiveCharacterTextSplitter splits text recursively on characters</span>
+<span class="c1"># ["\n\n", "\n", " ", ""] and stops as soon as the chunks are small enough</span>
+
 <span class="n">text_splitter</span> <span class="o">=</span> <span class="n">RecursiveCharacterTextSplitter</span><span class="p">(</span>
     <span class="n">chunk_size</span><span class="o">=</span><span class="mi">500</span><span class="p">,</span> <span class="n">chunk_overlap</span><span class="o">=</span><span class="mi">0</span>
 <span class="p">)</span>
@@ -8252,13 +8252,13 @@ original documents to generate an answer.</p>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [20]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [36]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># similarity_search_with_score - lower score represents more similarity</span>
 
-<span class="c1"># examples: national park, bison, pancake recipe</span>
-<span class="n">relevant_splits</span> <span class="o">=</span> <span class="n">vector_store</span><span class="o">.</span><span class="n">similarity_search_with_score</span><span class="p">(</span><span class="s2">"national park"</span><span class="p">,</span> <span class="n">k</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>
+<span class="c1"># examples: Białowieża, bison, nature protection, pancake recipe</span>
+<span class="n">relevant_splits</span> <span class="o">=</span> <span class="n">vector_store</span><span class="o">.</span><span class="n">similarity_search_with_score</span><span class="p">(</span><span class="s2">"Białowieża"</span><span class="p">,</span> <span class="n">k</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">" score  | size | document chunk"</span><span class="p">)</span>
 <span class="p">[</span>
     <span class="sa">f</span><span class="s1">'</span><span class="si">{</span><span class="n">score</span><span class="si">:</span><span class="s1">.3f</span><span class="si">}</span><span class="s1"> | </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">chunk</span><span class="o">.</span><span class="n">page_content</span><span class="p">)</span><span class="si">:</span><span class="s1">&gt;4</span><span class="si">}</span><span class="s1"> | </span><span class="si">{</span><span class="n">chunk</span><span class="o">.</span><span class="n">page_content</span><span class="p">[:</span><span class="mi">60</span><span class="p">]</span><span class="si">}</span><span class="s1"> ...'</span>
@@ -8281,13 +8281,13 @@ original documents to generate an answer.</p>
 </div>
 </div>
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[20]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[36]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
-<pre>['0.816 |   52 | === Belavezhskaya Pushcha National Park, Belarus === ...',
- '0.894 |   66 | == Nature protection ==\n\n\n=== Białowieża National Park, Pola ...',
- '0.962 |  190 | хозяйство), intended for recreation of the top leaders of th ...',
- '0.982 |  161 | The idea of creating a national park locally is about 200 ye ...',
- '0.987 |  182 | National Park is the only Polish natural property designated ...']</pre>
+<pre>['0.499 |  323 | Białowieża [bʲawɔˈvʲɛʐa] (Belarusian: Белавежа, Biełavieža)  ...',
+ '0.613 |  238 | Białowieża is the seat of the administrative district of Gmi ...',
+ '0.676 |  283 | == Location ==\nBiałowieża is in eastern Poland, in Podlasie  ...',
+ '0.716 |   95 | village of Białowieża lies within the forest. Białowieża mea ...',
+ '0.748 |  498 | The Białowieża Forest takes its name from the Polish village ...']</pre>
 </div>
 </div>
 </div>
@@ -8463,6 +8463,11 @@ original documents to generate an answer.</p>
 <li>Memory of the conversation</li>
 <li>Larger model</li>
 <li>GPU processing</li>
+<li>Other chunking strategies<ul>
+<li>find optimal chunk size</li>
+<li>ensure chunks preserve the context of the source documents</li>
+</ul>
+</li>
 </ol>
 </div>
 </div>
