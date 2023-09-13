@@ -23,7 +23,7 @@ spacy = "3.6.1"
 en_core_web_md = { url = "https://github.com/explosion/spacy-models/releases/download/en_core_web_md-3.6.0/en_core_web_md-3.6.0.tar.gz" }
 
 # Jupyter (v6, because v7 does not work well with RISE yet)
-ipywidgets = "8.1.0"
+ipywidgets = "8.1.1"
 jupyter-contrib-nbextensions = "0.7.0"
 notebook = "6.5.5"
 rise = "5.7.1"
