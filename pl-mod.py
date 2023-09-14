@@ -22,7 +22,8 @@ model = HuggingFacePipeline.from_model_id(
 from langchain import PromptTemplate, LLMChain
 
 template_text = """
-{question}
+Odpowiedz na pytanie zwięźle, używając maksymalnie 10 słów.
+Pytanie: {question}
 """
 template = PromptTemplate(template=template_text, input_variables=["question"])
 
