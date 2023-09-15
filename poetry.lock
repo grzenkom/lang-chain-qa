@@ -3497,17 +3497,17 @@ files = [
 
 [[package]]
 name = "pysqlite3-binary"
-version = "0.5.1"
+version = "0.5.2"
 description = "DB-API 2.0 interface for Sqlite 3.x"
 optional = false
 python-versions = "*"
 files = [
-    {file = "pysqlite3_binary-0.5.1-cp310-cp310-manylinux_2_24_x86_64.whl", hash = "sha256:4a22cf616b5367b683054f114b5fe6dece302cf12a04730332a310f335a38441"},
-    {file = "pysqlite3_binary-0.5.1-cp311-cp311-manylinux_2_24_x86_64.whl", hash = "sha256:41c17f30a68c1fe87aef88402f9e5ededf1cb319089705fdf2f8fdeeb91f79d1"},
-    {file = "pysqlite3_binary-0.5.1-cp36-cp36m-manylinux_2_24_x86_64.whl", hash = "sha256:1991c12f98771f6446f06161e68878375e6a4abc341a0783bd329eb3dfe0e6eb"},
-    {file = "pysqlite3_binary-0.5.1-cp37-cp37m-manylinux_2_24_x86_64.whl", hash = "sha256:4d1089b986db9b5abe13813a0edd7eb5f693612641ff99e40afc0afed2633b14"},
-    {file = "pysqlite3_binary-0.5.1-cp38-cp38-manylinux_2_24_x86_64.whl", hash = "sha256:102e17ad76878ac8ec4686104b57cd0115a3ba6b82e46625165ff28074a2374e"},
-    {file = "pysqlite3_binary-0.5.1-cp39-cp39-manylinux_2_24_x86_64.whl", hash = "sha256:d038101b39da76c20218af0e625213d7ac4ed00fbac02748878e28551f065cce"},
+    {file = "pysqlite3_binary-0.5.2-cp310-cp310-manylinux_2_24_x86_64.whl", hash = "sha256:175c9a2e74860408f2340d1bcf40eff880fbd18faa94464560921bdde7ff0ae2"},
+    {file = "pysqlite3_binary-0.5.2-cp311-cp311-manylinux_2_24_x86_64.whl", hash = "sha256:6c37c51679256e529659e7e3798464e9284acd7b6f96a75215be939e86ea80c5"},
+    {file = "pysqlite3_binary-0.5.2-cp36-cp36m-manylinux_2_24_x86_64.whl", hash = "sha256:bcd776211c7e40227117548e36d79c2937e5a452dea54410122f761942d35f3e"},
+    {file = "pysqlite3_binary-0.5.2-cp37-cp37m-manylinux_2_24_x86_64.whl", hash = "sha256:eee8a6a63aa44987ed2a399a2e089f94327d77ed82a308954eb2113a3ab7e097"},
+    {file = "pysqlite3_binary-0.5.2-cp38-cp38-manylinux_2_24_x86_64.whl", hash = "sha256:df0ccc802fd01a428d446baa904a38707d587348ec8216d0b6c4ae32e152b904"},
+    {file = "pysqlite3_binary-0.5.2-cp39-cp39-manylinux_2_24_x86_64.whl", hash = "sha256:2e6bd48e080ede902257bd3cfb739d97a53546360cafcf9ac9800dcec31b7648"},
 ]
 
 [[package]]
@@ -5640,4 +5640,4 @@ testing = ["big-O", "jaraco.functools", "jaraco.itertools", "more-itertools", "p
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.10"
-content-hash = "5cb1260e60cfc55bc1c121f91c9e480eff86256c2b305d90a11bf11669e50e0e"
+content-hash = "8cef39ea82655d7a44355ff5ef43415bc8ded1ba576865dd81498f43f8367fa4"
