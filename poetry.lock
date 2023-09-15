@@ -746,13 +746,13 @@ test = ["coverage (>=4.2)", "flake8 (>=3.0.4)", "path.py (>=11.5.0)", "pytest (>
 
 [[package]]
 name = "cohere"
-version = "4.24"
+version = "4.26.1"
 description = ""
 optional = false
 python-versions = ">=3.7,<4.0"
 files = [
-    {file = "cohere-4.24-py3-none-any.whl", hash = "sha256:04b5b05411724162cc6c620006b2984459fe2a6e23f5bf75489a83d4659a9fbc"},
-    {file = "cohere-4.24.tar.gz", hash = "sha256:ed94200115c4147cdf4e79467d591f1e4892cc8984558e5e9d104ae1e6287470"},
+    {file = "cohere-4.26.1-py3-none-any.whl", hash = "sha256:d9bf455ca44ee746a84e662cb37cc4a581263c13c236906d09f18066ed783c13"},
+    {file = "cohere-4.26.1.tar.gz", hash = "sha256:922539568a0e5a1aa78dd8521c020657e0f8a66f50ba9cf6a28d13673f40498f"},
 ]
 
 [package.dependencies]
@@ -5639,4 +5639,4 @@ testing = ["big-O", "jaraco.functools", "jaraco.itertools", "more-itertools", "p
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.10"
-content-hash = "42a78ace96a3f4679533934d3912d54359db295aaec951521c10cbb4da65a477"
+content-hash = "d563424b88ec2439f266aa30a50d73fcbe76059c6949c728b27d8b1697858ee1"
