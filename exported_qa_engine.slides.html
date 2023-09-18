@@ -7656,7 +7656,7 @@ main {
 </div>
 </div>
 </div>
-</div><div class="fragment"><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=035dd36a">
+</div><div class="fragment"><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=035dd36a">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -7678,19 +7678,6 @@ main {
     <span class="n">device</span><span class="o">=-</span><span class="mi">1</span><span class="p">,</span>  <span class="c1"># CPU</span>
 <span class="p">)</span>
 </pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>Device has 1 GPUs available. Provide device={deviceId} to `from_model_id` to use availableGPUs for execution. deviceId is -1 (default) for CPU and can be a positive integer associated with CUDA device id.
-</pre>
 </div>
 </div>
 </div>
@@ -7978,6 +7965,7 @@ main {
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <h2 id="Embeddings-as-a-vector-representation-of-text">Embeddings as a vector representation of text<a class="anchor-link" href="#Embeddings-as-a-vector-representation-of-text">¶</a></h2><p><img alt="cosine similarity in 2D" src="./images/vectors-cos-sim-500.png"/></p>
 <p>The actual embedding spaces have <strong>100s or even 1000s of dimensions</strong>! 🤯</p>
+<p>An embedding vector can represent a <strong>word</strong>, an entire <strong>sentence</strong> or a longer <strong>chunk of text</strong>.</p>
 <p>Source: <a href="https://github.com/grzenkom/do-androids-read/">github.com/grzenkom/do-androids-read/</a></p>
 </div>
 </div>
@@ -7989,7 +7977,7 @@ main {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Cosine-similarity">Cosine similarity<a class="anchor-link" href="#Cosine-similarity">¶</a></h2><p>Cosine similarity is one of many vector similarity and vector distance measures.</p>
+<h2 id="Cosine-similarity">Cosine similarity<a class="anchor-link" href="#Cosine-similarity">¶</a></h2>
 </div>
 </div>
 </div>
@@ -8054,6 +8042,17 @@ cos(dog, stone) =  0.071
 cos(dog, Xerox) = -0.134
 </pre>
 </div>
+</div>
+</div>
+</div>
+</div></div><div class="fragment">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=35145c01">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>❗Cosine similarity is one of many vector similarity and vector distance measures.</p>
 </div>
 </div>
 </div>
@@ -8252,7 +8251,7 @@ original documents to generate an answer.</p>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [36]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [27]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># similarity_search_with_score - lower score represents more similarity</span>
@@ -8281,7 +8280,7 @@ original documents to generate an answer.</p>
 </div>
 </div>
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[36]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[27]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
 <pre>['0.499 |  323 | Białowieża [bʲawɔˈvʲɛʐa] (Belarusian: Белавежа, Biełavieža)  ...',
  '0.613 |  238 | Białowieża is the seat of the administrative district of Gmi ...',
