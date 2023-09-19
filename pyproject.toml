@@ -25,7 +25,7 @@ en_core_web_md = { url = "https://github.com/explosion/spacy-models/releases/dow
 # Jupyter (v6, because v7 does not work well with RISE yet)
 ipywidgets = "8.1.1"
 jupyter-contrib-nbextensions = "0.7.0"
-notebook = "6.5.5"
+notebook = "6.5.6"
 rise = "5.7.1"
 traitlets = ">=5.9.0, !=5.10.0"  # workaround for "ModuleNotFoundError: No module named 'jupyter_server.contents'", https://github.com/jupyter/notebook/issues/7048
 
