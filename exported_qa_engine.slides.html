@@ -7494,8 +7494,8 @@ main {
 <li>Enable <strong>local development and execution</strong> (easy to replace with cloud-hosted inference APIs later)</li>
 <li>Utilize <strong>open-source models</strong></li>
 <li>Prototype a solution for a <strong>real business challenge</strong><ol>
-<li>Query proprietary company documents using natural language (semantic search)</li>
-<li>Create a ChatGPT-like user experience</li>
+<li>Use semantic search for proprietary company documents</li>
+<li>Query the index in natural language</li>
 </ol>
 </li>
 </ol>
@@ -7965,7 +7965,7 @@ main {
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <h2 id="Embeddings-as-a-vector-representation-of-text">Embeddings as a vector representation of text<a class="anchor-link" href="#Embeddings-as-a-vector-representation-of-text">¶</a></h2><p><img alt="cosine similarity in 2D" src="./images/vectors-cos-sim-500.png"/></p>
 <p>The actual embedding spaces have <strong>100s or even 1000s of dimensions</strong>! 🤯</p>
-<p>An embedding vector can represent a <strong>word</strong>, an entire <strong>sentence</strong> or a longer <strong>chunk of text</strong>.</p>
+<p>An embedding vector can represent: a <strong>word</strong>, an entire <strong>sentence</strong> or a longer <strong>chunk of text</strong>.</p>
 <p>Source: <a href="https://github.com/grzenkom/do-androids-read/">github.com/grzenkom/do-androids-read/</a></p>
 </div>
 </div>
@@ -8218,7 +8218,7 @@ original documents to generate an answer.</p>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [19]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [25]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">langchain.vectorstores</span> <span class="kn">import</span> <span class="n">Chroma</span>
@@ -8227,7 +8227,7 @@ original documents to generate an answer.</p>
     <span class="n">documents</span><span class="o">=</span><span class="n">all_splits</span><span class="p">,</span> <span class="n">embedding</span><span class="o">=</span><span class="n">hf_embeddings</span>
 <span class="p">)</span>
 
-<span class="c1"># default similarity measure is `l2`, not `cosine`</span>
+<span class="c1"># Chroma's default similarity measure is `l2`, not `cosine`</span>
 <span class="c1">#  - https://docs.trychroma.com/usage-guide#changing-the-distance-function</span>
 <span class="c1">#  - https://github.com/nmslib/hnswlib/tree/master#python-bindings</span>
 </pre></div>
@@ -8251,7 +8251,7 @@ original documents to generate an answer.</p>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [27]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [20]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># similarity_search_with_score - lower score represents more similarity</span>
@@ -8280,7 +8280,7 @@ original documents to generate an answer.</p>
 </div>
 </div>
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[27]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[20]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
 <pre>['0.499 |  323 | Białowieża [bʲawɔˈvʲɛʐa] (Belarusian: Белавежа, Biełavieža)  ...',
  '0.613 |  238 | Białowieża is the seat of the administrative district of Gmi ...',
@@ -8331,7 +8331,7 @@ original documents to generate an answer.</p>
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <h3 id="RetrievalQA-chain---processing-steps"><code>RetrievalQA</code> chain - processing steps<a class="anchor-link" href="#RetrievalQA-chain---processing-steps">¶</a></h3><ol>
 <li>fetch document splits relevant to the question from the vector database,</li>
-<li>include the retrieved splits in the model prompt,</li>
+<li>inject the retrieved splits into the model prompt,</li>
 <li>have the LLM generate an answer based on original documents.</li>
 </ol>
 </div>
@@ -8458,8 +8458,11 @@ original documents to generate an answer.</p>
 <li>files in Google Drive</li>
 </ul>
 </li>
-<li>Conversational interface</li>
-<li>Memory of the conversation</li>
+<li>Conversational user experience<ul>
+<li>chat user interface</li>
+<li>memory of the conversation</li>
+</ul>
+</li>
 <li>Larger model</li>
 <li>GPU processing</li>
 <li>Other chunking strategies<ul>
@@ -8483,13 +8486,24 @@ original documents to generate an answer.</p>
 <li>🎥 <a href="https://www.youtube.com/watch?v=s6zNXZaIiiI">State of GPT | Andrej Karpathy</a></li>
 </ul>
 </li>
+<li><a href="https://ig.ft.com/generative-ai">Generative AI exists because of the transformer</a></li>
 <li><a href="https://simonwillison.net/2023/Aug/3/weird-world-of-llms">Catching up on the weird world of LLMs</a></li>
 <li><a href="https://willthompson.name/what-we-know-about-llms-primer">What We Know About LLMs  (Primer)</a></li>
 <li><a href="https://toloka.ai/blog/history-of-llms">The history, timeline, and future of LLMs</a></li>
 <li><a href="https://github.com/Mooler0410/LLMsPracticalGuide">The Practical Guides for Large Language Models</a></li>
 <li><a href="https://moultano.wordpress.com/2023/06/28/the-many-ways-that-digital-minds-can-know">The Many Ways that Digital Minds Can Know</a></li>
 </ul>
-<h3 id="Courses,-tutorials">Courses, tutorials<a class="anchor-link" href="#Courses,-tutorials">¶</a></h3><ul>
+</div>
+</div>
+</div>
+</div></section></section><section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=24431409">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="Links-(cont.)">Links (cont.)<a class="anchor-link" href="#Links-(cont.)">¶</a></h2><h3 id="Courses,-tutorials">Courses, tutorials<a class="anchor-link" href="#Courses,-tutorials">¶</a></h3><ul>
 <li>👩‍🎓 <a href="https://learn.deeplearning.ai/large-language-models-semantic-search">Large Language Models with Semantic Search</a> (great explanation of <strong>embeddings</strong> + sandbox to experiment with provided code samples)</li>
 <li><a href="https://www.markhneedham.com/blog/2023/06/23/hugging-face-run-llm-model-locally-laptop">Running a Hugging Face Large Language Model (LLM) locally on my laptop</a></li>
 <li><a href="https://www.tidepool.so/2023/08/17/why-you-probably-dont-need-to-fine-tune-an-llm/">Why You (Probably) Don’t Need to Fine-tune an LLM</a></li>
