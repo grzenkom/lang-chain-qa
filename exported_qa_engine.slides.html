@@ -8420,7 +8420,7 @@ original documents to generate an answer.</p>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [24]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [38]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">question</span> <span class="o">=</span> <span class="s2">"Is Bialowieza Forest famous for its walking trails?"</span>
@@ -8436,9 +8436,125 @@ original documents to generate an answer.</p>
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[24]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[38]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
 <pre>'&lt;pad&gt; No,  only  scientists  can  navigate  freely.\n'</pre>
+</div>
+</div>
+</div>
+</div>
+</div></section></section><section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=27739140">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="Wait!-But-why?!-%F0%9F%95%B5">Wait! But why?! 🕵<a class="anchor-link" href="#Wait!-But-why?!-%F0%9F%95%B5">¶</a></h2><p>It is possible to configure the QA chain to return the source chunks used to generate the answer.</p>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=1690637d">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [44]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">explainable_qa_chain</span> <span class="o">=</span> <span class="n">RetrievalQA</span><span class="o">.</span><span class="n">from_chain_type</span><span class="p">(</span>
+    <span class="n">llm</span><span class="o">=</span><span class="n">model</span><span class="p">,</span> <span class="n">retriever</span><span class="o">=</span><span class="n">vector_store</span><span class="o">.</span><span class="n">as_retriever</span><span class="p">(),</span>
+    <span class="n">return_source_documents</span><span class="o">=</span><span class="kc">True</span>
+<span class="p">)</span>
+
+<span class="n">explainable_qa_output</span> <span class="o">=</span> <span class="n">explainable_qa_chain</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Provide brief answers, use 10 words or less. </span><span class="si">{</span><span class="n">question</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div></section></section><section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=ac720d13">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="Source-documents---metadata-%F0%9F%95%B5">Source documents - metadata 🕵<a class="anchor-link" href="#Source-documents---metadata-%F0%9F%95%B5">¶</a></h2>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=1224447a">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [45]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="p">[</span>
+    <span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">chunk</span><span class="o">.</span><span class="n">metadata</span><span class="p">[</span><span class="s1">'title'</span><span class="p">][:</span><span class="mi">35</span><span class="p">]</span><span class="si">:</span><span class="s2">&lt;35</span><span class="si">}</span><span class="s2"> | </span><span class="si">{</span><span class="n">chunk</span><span class="o">.</span><span class="n">metadata</span><span class="p">[</span><span class="s1">'source'</span><span class="p">][:</span><span class="mi">70</span><span class="p">]</span><span class="si">}</span><span class="s2">"</span>
+    <span class="k">for</span> <span class="n">chunk</span> <span class="ow">in</span> <span class="n">explainable_qa_output</span><span class="p">[</span><span class="s1">'source_documents'</span><span class="p">]</span>
+<span class="p">]</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[45]:</div>
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
+<pre>['Bialowieski Park Narodowy - Walking | https://bpn.com.pl/index.php?option=com_content&amp;task=view&amp;id=651&amp;Itemi',
+ 'Białowieża Forest                   | https://en.wikipedia.org/wiki/Bia%C5%82owie%C5%BCa_Forest',
+ 'Białowieża Forest                   | https://en.wikipedia.org/wiki/Bia%C5%82owie%C5%BCa_Forest',
+ 'Białowieża National Park            | https://en.wikipedia.org/wiki/Bia%C5%82owie%C5%BCa_National_Park']</pre>
+</div>
+</div>
+</div>
+</div>
+</div></section></section><section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=78aaf88b">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="Source-documents---content-%F0%9F%95%B5">Source documents - content 🕵<a class="anchor-link" href="#Source-documents---content-%F0%9F%95%B5">¶</a></h2>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=f13f37b8">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [46]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="p">[</span>
+    <span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">chunk</span><span class="o">.</span><span class="n">page_content</span><span class="si">}</span><span class="s2">"</span>
+    <span class="k">for</span> <span class="n">chunk</span> <span class="ow">in</span> <span class="n">explainable_qa_output</span><span class="p">[</span><span class="s1">'source_documents'</span><span class="p">]</span>
+<span class="p">]</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[46]:</div>
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
+<pre>['tourists about undergrowth plants, animal trails and processes occuring in the natural forest untainted by manmade activity. Remaining trails are made available to specialised groups, on every such occasion permission from the Park’s Directorate is required.',
+ 'village of Białowieża lies within the forest. Białowieża means "the white tower" in Old Polish.',
+ '== Nature protection ==\n\n\n=== Białowieża National Park, Poland ===',
+ 'Often called the "last untouched wilderness of Europe", the Białowieża National Park is the only one of its kind among the 23 national parks of Poland. Its inner zone belongs to the realm of old-growth forest which has been living without much human intervention for almost 800 years. Only scientists can navigate the strictly protected area freely. Each group of tourists is limited to no more than 20 people, and the presence of an official guide is mandatory. A classic road tour leads through']</pre>
 </div>
 </div>
 </div>
