@@ -8215,9 +8215,12 @@ original documents to generate an answer.</p>
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">langchain.document_loaders</span> <span class="kn">import</span> <span class="n">WebBaseLoader</span>
 
-<span class="n">loader</span> <span class="o">=</span> <span class="n">WebBaseLoader</span><span class="p">(</span>
-    <span class="s2">"https://bpn.com.pl/index.php?option=com_content&amp;task=view&amp;id=651&amp;Itemid=297&amp;lang=en"</span>
-<span class="p">)</span>
+<span class="n">urls</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="s2">"https://bpn.com.pl/index.php?option=com_content&amp;task=view&amp;id=651&amp;Itemid=297&amp;lang=en"</span><span class="p">,</span>
+    <span class="s2">"https://bpn.com.pl/index.php?option=com_content&amp;task=view&amp;id=27&amp;Itemid=211&amp;lang=en"</span>
+<span class="p">]</span>
+
+<span class="n">loader</span> <span class="o">=</span> <span class="n">WebBaseLoader</span><span class="p">(</span><span class="n">web_paths</span><span class="o">=</span><span class="n">urls</span><span class="p">)</span>
 <span class="n">bpn_page</span> <span class="o">=</span> <span class="n">loader</span><span class="o">.</span><span class="n">load</span><span class="p">()</span>
 </pre></div>
 </div>
@@ -8510,7 +8513,7 @@ original documents to generate an answer.</p>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [38]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [24]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">question</span> <span class="o">=</span> <span class="s2">"Is Bialowieza Forest famous for its walking trails?"</span>
@@ -8526,7 +8529,7 @@ original documents to generate an answer.</p>
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[38]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[24]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
 <pre>'&lt;pad&gt; No,  only  scientists  can  navigate  freely.\n'</pre>
 </div>
@@ -8549,7 +8552,7 @@ original documents to generate an answer.</p>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [44]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [25]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">explainable_qa_chain</span> <span class="o">=</span> <span class="n">RetrievalQA</span><span class="o">.</span><span class="n">from_chain_type</span><span class="p">(</span>
@@ -8579,7 +8582,7 @@ original documents to generate an answer.</p>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [45]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [26]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="p">[</span>
@@ -8596,7 +8599,7 @@ original documents to generate an answer.</p>
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[45]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[26]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
 <pre>['Bialowieski Park Narodowy - Walking | https://bpn.com.pl/index.php?option=com_content&amp;task=view&amp;id=651&amp;Itemi',
  'Białowieża Forest                   | https://en.wikipedia.org/wiki/Bia%C5%82owie%C5%BCa_Forest',
@@ -8622,7 +8625,7 @@ original documents to generate an answer.</p>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [46]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [27]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="p">[</span>
@@ -8639,7 +8642,7 @@ original documents to generate an answer.</p>
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[46]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[27]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
 <pre>['tourists about undergrowth plants, animal trails and processes occuring in the natural forest untainted by manmade activity. Remaining trails are made available to specialised groups, on every such occasion permission from the Park’s Directorate is required.',
  'village of Białowieża lies within the forest. Białowieża means "the white tower" in Old Polish.',
