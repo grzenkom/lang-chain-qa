@@ -7697,7 +7697,7 @@ a.anchor-link {
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=035dd36a">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=035dd36a">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -7719,6 +7719,19 @@ a.anchor-link {
     <span class="n">device</span><span class="o">=-</span><span class="mi">1</span><span class="p">,</span>  <span class="c1"># CPU</span>
 <span class="p">)</span>
 </pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
+<pre>Device has 1 GPUs available. Provide device={deviceId} to `from_model_id` to use availableGPUs for execution. deviceId is -1 (default) for CPU and can be a positive integer associated with CUDA device id.
+</pre>
 </div>
 </div>
 </div>
@@ -7968,7 +7981,8 @@ a.anchor-link {
 <div class="jp-InputPrompt jp-InputArea-prompt">In [12]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">llm_chain</span><span class="p">(</span><span class="s2">"What's the length of the Tsar's Trail and where does it begin?"</span><span class="p">)[</span><span class="s2">"text"</span><span class="p">]</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">llm_chain</span><span class="p">(</span><span class="s2">"""Bialowieza Forest trails are marked with colors.</span>
+<span class="s2">   What's the color of the Wolf’s Trail?"""</span><span class="p">)[</span><span class="s2">"text"</span><span class="p">]</span>
 </pre></div>
 </div>
 </div>
@@ -7981,7 +7995,7 @@ a.anchor-link {
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
 <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[12]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
-<pre>"&lt;pad&gt; The Tsar's Trail is a 900 mile long trail that begins in Moscow and ends in St. Petersburg."</pre>
+<pre>'&lt;pad&gt; Yellow.\n'</pre>
 </div>
 </div>
 </div>
@@ -8375,11 +8389,11 @@ original documents to generate an answer.</p>
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
 <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[20]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
-<pre>['0.499 |  323 | Białowieża [bʲawɔˈvʲɛʐa] (Belarusian: Белавежа, Biełavieža)  ...',
- '0.613 |  238 | Białowieża is the seat of the administrative district of Gmi ...',
- '0.676 |  283 | == Location ==\nBiałowieża is in eastern Poland, in Podlasie  ...',
+<pre>["0.570 |  245 | Białowieża [bʲawɔˈvʲɛʐa] in Poland's Podlasie Province, in t ...",
+ '0.624 |  450 | == Location ==\nBiałowieża is in eastern Poland, in Podlasie  ...',
  '0.716 |   95 | village of Białowieża lies within the forest. Białowieża mea ...',
- '0.748 |  498 | The Białowieża Forest takes its name from the Polish village ...']</pre>
+ '0.748 |  498 | The Białowieża Forest takes its name from the Polish village ...',
+ '0.768 |  500 | Białowieża National Park (Polish: Białowieski Park Narodowy) ...']</pre>
 </div>
 </div>
 </div>
@@ -8477,7 +8491,8 @@ original documents to generate an answer.</p>
 <div class="jp-InputPrompt jp-InputArea-prompt">In [23]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">question</span> <span class="o">=</span> <span class="s2">"What's the length of the Tsar's Trail and where does it begin?"</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">question</span> <span class="o">=</span> <span class="s2">"""Bialowieza Forest trails are marked with colors.</span>
+<span class="s2">   What's the color of the Wolf’s Trail?"""</span>
 
 <span class="n">qa_chain</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Provide brief answers, use 10 words or less. </span><span class="si">{</span><span class="n">question</span><span class="si">}</span><span class="s2">"</span><span class="p">)[</span><span class="s2">"result"</span><span class="p">]</span>
 </pre></div>
@@ -8492,7 +8507,7 @@ original documents to generate an answer.</p>
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
 <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[23]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
-<pre>'&lt;pad&gt; 4  km  long,  starts  at  Przed  Kosym  Mostem  depot.\n'</pre>
+<pre>"&lt;pad&gt; The  Wolf's  Trail  is  green.\n"</pre>
 </div>
 </div>
 </div>
