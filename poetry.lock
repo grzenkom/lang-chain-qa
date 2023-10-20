@@ -3385,17 +3385,18 @@ files = [
 
 [[package]]
 name = "pysqlite3-binary"
-version = "0.5.2"
+version = "0.5.2.post1"
 description = "DB-API 2.0 interface for Sqlite 3.x"
 optional = false
 python-versions = "*"
 files = [
-    {file = "pysqlite3_binary-0.5.2-cp310-cp310-manylinux_2_24_x86_64.whl", hash = "sha256:175c9a2e74860408f2340d1bcf40eff880fbd18faa94464560921bdde7ff0ae2"},
-    {file = "pysqlite3_binary-0.5.2-cp311-cp311-manylinux_2_24_x86_64.whl", hash = "sha256:6c37c51679256e529659e7e3798464e9284acd7b6f96a75215be939e86ea80c5"},
-    {file = "pysqlite3_binary-0.5.2-cp36-cp36m-manylinux_2_24_x86_64.whl", hash = "sha256:bcd776211c7e40227117548e36d79c2937e5a452dea54410122f761942d35f3e"},
-    {file = "pysqlite3_binary-0.5.2-cp37-cp37m-manylinux_2_24_x86_64.whl", hash = "sha256:eee8a6a63aa44987ed2a399a2e089f94327d77ed82a308954eb2113a3ab7e097"},
-    {file = "pysqlite3_binary-0.5.2-cp38-cp38-manylinux_2_24_x86_64.whl", hash = "sha256:df0ccc802fd01a428d446baa904a38707d587348ec8216d0b6c4ae32e152b904"},
-    {file = "pysqlite3_binary-0.5.2-cp39-cp39-manylinux_2_24_x86_64.whl", hash = "sha256:2e6bd48e080ede902257bd3cfb739d97a53546360cafcf9ac9800dcec31b7648"},
+    {file = "pysqlite3_binary-0.5.2.post1-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:668e7853b9e3db5c23b32a57634f658db5008fa1781121d2554a103c34775fe8"},
+    {file = "pysqlite3_binary-0.5.2.post1-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:3748b00d927b2153a6c5f5d5cdefef11ca9e3ef1e7a87122e3b93c38aced68a9"},
+    {file = "pysqlite3_binary-0.5.2.post1-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:e00221940d874917e95ef0385b4c09c30d6b63fbe89d742ab0ef01229e76f834"},
+    {file = "pysqlite3_binary-0.5.2.post1-cp36-cp36m-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:fbecaaf34bdbc04b98dfbca8ea85509b7d0b1e8302c150544065c268b6cf220c"},
+    {file = "pysqlite3_binary-0.5.2.post1-cp37-cp37m-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:9e0686824294a0a00b9c0d4def0572c7eb7d2334088f127d26c9f73191ddf75c"},
+    {file = "pysqlite3_binary-0.5.2.post1-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:d83eefb3c20a51d1c36ce49d5fecc84e3f40c729f5f1a76c9e2cbd39f0420ff1"},
+    {file = "pysqlite3_binary-0.5.2.post1-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:26f297d5e3c48a01483b215f485ac82e074e0716ef0a82aeb0491cba038af819"},
 ]
 
 [[package]]
@@ -5683,4 +5684,4 @@ testing = ["big-O", "jaraco.functools", "jaraco.itertools", "more-itertools", "p
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.10"
-content-hash = "f007112f87693d74f1920ac7be5f21f038eabafc3e48711689fa582bb7eca2a0"
+content-hash = "47702fcb39c188a8e15dcabcf4579a364becb2173cb45336ae3b8b0719ba5c91"
