@@ -14,7 +14,7 @@ torch = "2.0.0"  # workaround for "libcublas.so.*[0-9] not found in the system p
 
 # loading and indexing documents for RAG
 chromadb = "0.4.14"
-pysqlite3-binary = "0.5.2.post1"
+pysqlite3-binary = "0.5.2.post2"
 sentence-transformers = "2.2.2"
 wikipedia = "1.4.0"
 
