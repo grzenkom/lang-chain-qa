@@ -7443,7 +7443,9 @@ main {
 <p><img alt="Roche logo" src="images/roche-logo-blue-aligned-right.png"/></p>
 <p> </p>
 <p> </p>
-<h1 id="Building-a-Q&amp;A-engine-with-LangChain-and-open-source-LLMs">Building a Q&amp;A engine with LangChain and open-source LLMs<a class="anchor-link" href="#Building-a-Q&amp;A-engine-with-LangChain-and-open-source-LLMs">¶</a></h1><h2 id="Marek-Grzenkowicz">Marek Grzenkowicz<a class="anchor-link" href="#Marek-Grzenkowicz">¶</a></h2><h4 id="December-2023">December 2023<a class="anchor-link" href="#December-2023">¶</a></h4><p><img alt="DevAI logo" src="images/devai-logo.png"/></p>
+<h1 id="Building-a-Q&amp;A-engine-with-LangChain-and-open-source-LLMs">Building a Q&amp;A engine with LangChain and open-source LLMs<a class="anchor-link" href="#Building-a-Q&amp;A-engine-with-LangChain-and-open-source-LLMs">¶</a></h1><h2 id="Marek-Grzenkowicz">Marek Grzenkowicz<a class="anchor-link" href="#Marek-Grzenkowicz">¶</a></h2><h4 id="December-2023">December 2023<a class="anchor-link" href="#December-2023">¶</a></h4><p> </p>
+<p> </p>
+<p><img alt="DevAI logo" src="images/devai-logo.png"/></p>
 </div>
 </div>
 </div>
@@ -8222,6 +8224,9 @@ original documents to generate an answer.</p>
         <span class="s2">"normalize_embeddings"</span><span class="p">:</span> <span class="kc">False</span>
     <span class="p">}</span>
 <span class="p">)</span>
+
+<span class="c1"># `all-mpnet-base-v2` maps sentences &amp; paragraphs to a 768 dimensional</span>
+<span class="c1"># dense vector space and can be used for tasks like clustering or semantic search</span>
 </pre></div>
 </div>
 </div>
@@ -8409,70 +8414,6 @@ original documents to generate an answer.</p>
 <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[25]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
 <pre>'&lt;pad&gt; No,  only  scientists  can  navigate  freely.\n'</pre>
-</div>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=1224447a">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [27]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="p">[</span>
-    <span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">chunk</span><span class="o">.</span><span class="n">metadata</span><span class="p">[</span><span class="s1">'title'</span><span class="p">][:</span><span class="mi">35</span><span class="p">]</span><span class="si">:</span><span class="s2">&lt;35</span><span class="si">}</span><span class="s2"> | </span><span class="si">{</span><span class="n">chunk</span><span class="o">.</span><span class="n">metadata</span><span class="p">[</span><span class="s1">'source'</span><span class="p">][:</span><span class="mi">70</span><span class="p">]</span><span class="si">}</span><span class="s2">"</span>
-    <span class="k">for</span> <span class="n">chunk</span> <span class="ow">in</span> <span class="n">explainable_qa_output</span><span class="p">[</span><span class="s1">'source_documents'</span><span class="p">]</span>
-<span class="p">]</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[27]:</div>
-<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
-<pre>['Bialowieski Park Narodowy - Walking | https://bpn.com.pl/index.php?option=com_content&amp;task=view&amp;id=651&amp;Itemi',
- 'Białowieża National Park            | https://en.wikipedia.org/wiki/Bia%C5%82owie%C5%BCa_National_Park',
- 'Białowieża Forest                   | https://en.wikipedia.org/wiki/Bia%C5%82owie%C5%BCa_Forest',
- 'Białowieża Forest                   | https://en.wikipedia.org/wiki/Bia%C5%82owie%C5%BCa_Forest']</pre>
-</div>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=f13f37b8">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [28]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="p">[</span>
-    <span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">chunk</span><span class="o">.</span><span class="n">page_content</span><span class="si">}</span><span class="s2">"</span>
-    <span class="k">for</span> <span class="n">chunk</span> <span class="ow">in</span> <span class="n">explainable_qa_output</span><span class="p">[</span><span class="s1">'source_documents'</span><span class="p">]</span>
-<span class="p">]</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[28]:</div>
-<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
-<pre>['tourists about undergrowth plants, animal trails and processes occuring in the natural forest untainted by manmade activity. Remaining trails are made available to specialised groups, on every such occasion permission from the Park’s Directorate is required.',
- 'Often called the "last untouched wilderness of Europe", the Białowieża National Park is the only one of its kind among the 23 national parks of Poland. Its inner zone belongs to the realm of old-growth forest which has been living without much human intervention for almost 800 years. Only scientists can navigate the strictly protected area freely. Each group of tourists is limited to no more than 20 people, and the presence of an official guide is mandatory. A classic road tour leads through',
- '== Nature protection ==\n\n\n=== Białowieża National Park, Poland ===',
- 'On the Polish side, part of the Białowieża Forest is protected as the Białowieża National Park (Polish: Białowieski Park Narodowy), with an area of about 105 km2 (41 sq mi). There is also the Białowieża Glade (Polish: Polana Białowieska), with a complex of buildings once owned by the tsars of Russia during the Partitions of Poland. At present, a hotel and restaurant with a car park is located there. Guided tours into the strictly protected areas of the park can be arranged on foot, bike or by']</pre>
 </div>
 </div>
 </div>
